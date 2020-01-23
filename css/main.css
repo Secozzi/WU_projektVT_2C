@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    /*white-space: nowrap;*/
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.3s
+}
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: lightblue;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    align-items: center;
+    white-space: nowrap;
+    position: fixed;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    top: 0;
+}
+
+.mainPart {
+    background-color: white;
+    color: black;
+    margin-top: 11vh;
+}
+
+
+
+
+
+.mainMenudm > .mainLinks :hover {
+    border-left: 10px solid #212121;
+    background-color: #181818;
+}
+
+.subMenudm {
+    background-color: #101010;
+}
+
+.mainMenudm {
+    background-color: #1F1F1F;
+}
+
+.mainPartdm {
+    background-color: #121212;
+    color: white;
+}
