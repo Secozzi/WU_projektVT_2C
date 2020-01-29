@@ -33,6 +33,11 @@
     background-color: skyblue;
 }
 
+.mainMenudm > .mainLinks :hover {
+    border-left: 10px solid #404040;
+    background-color: #121212;
+}
+
 .mainLinks:hover .subMenu {
     display: table;
     border: none;
@@ -60,10 +65,15 @@
 }
 
 .subMenu > .subLinks {
+    background-color: lightblue;
     position: relative;
     text-align: center;
     display: table-row;
     list-style: none;
+}
+
+.subMenudm > .subLinks{
+    background-color: #1F1F1F;
 }
 
 .burger div {
@@ -79,3 +89,11 @@
 .toggle .line3 {transform: rotate(45deg) translate(-5px, -6px);}
 .toggle .line2 {opacity: 0;}
 .burger {margin-right: 50px;cursor: pointer;}
+
+.subMenudm {
+    background-color: #101010;
+}
+
+.mainMenudm {
+    background-color: #1F1F1F;
+}

@@ -35,23 +35,6 @@ nav {
     margin-top: 11vh;
 }
 
-
-
-
-
-.mainMenudm > .mainLinks :hover {
-    border-left: 10px solid #212121;
-    background-color: #181818;
-}
-
-.subMenudm {
-    background-color: #101010;
-}
-
-.mainMenudm {
-    background-color: #1F1F1F;
-}
-
 .mainPartdm {
     background-color: #121212;
     color: white;
