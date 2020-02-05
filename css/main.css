@@ -4,7 +4,6 @@
     /*white-space: nowrap;*/
     padding: 0px;
     margin: 0px;
-    transition: all 0.3s
 }
 
 *:focus {
@@ -23,29 +22,30 @@ nav {
     white-space: nowrap;
     position: fixed;
     display: flex;
-    height: 10vh;
+    height: 100px;
     width: 100vw;
     right: 0;
     top: 0;
 }
 
+.title {
+    position: fixed;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    left: 20px;
+}
+
 .mainPart {
     background-color: white;
     color: black;
-    margin-top: 11vh;
+    margin-top: 110px;
 }
-
-
-
-
 
 .mainMenudm > .mainLinks :hover {
     border-left: 10px solid #212121;
     background-color: #181818;
-}
-
-.subMenudm {
-    background-color: #101010;
 }
 
 .mainMenudm {
