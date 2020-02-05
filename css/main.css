@@ -1,4 +1,5 @@
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
     /*white-space: nowrap;*/
@@ -10,42 +11,62 @@
     outline: 0;
 }
 
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
 body {
     overflow-x: hidden;
 }
 
 nav {
-    background-color: lightblue;
     justify-content: flex-end;
     font-family: sans-serif;
     align-items: center;
     white-space: nowrap;
     position: fixed;
     display: flex;
-    height: 100px;
+    height: 70px;
     width: 100vw;
     right: 0;
     top: 0;
+}
+
+.scrollD {
+    background-color: lightblue;
 }
 
 .title {
     position: fixed;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 40px;
-    color: white;
+    font-size: 2.5rem;
     left: 20px;
+}
+
+.title a {
+    font-family: "Quicksand", sans-serif;
+    color: white;
 }
 
 .mainPart {
     background-color: white;
     color: black;
-    margin-top: 110px;
 }
 
-.mainMenudm > .mainLinks :hover {
-    border-left: 10px solid #212121;
-    background-color: #181818;
+#background {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 999px) {
+    .mainMenudm > .mainLinks :hover {
+        border-left: 10px solid #414141;
+        background-color: #181818;
+    }
 }
 
 .mainMenudm {

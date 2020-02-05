@@ -1,14 +1,17 @@
+.menu {
+    transition: all 0.3s; 
+}
+
 .mainMenu {
-    background-color: lightblue;
-    transition: all 0.3s;
+    font-family: "Quicksand", sans-serif;
     table-layout: fixed;
     align-items: center;
     position: absolute;
     display: table;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     right: -40%;
     width: 40%;
-    top: 100px;    
+    top: 70px;    
 }
 
 .mainMenu a {
@@ -17,7 +20,7 @@
     display: table-cell;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     width: 100%;
 }
@@ -37,10 +40,21 @@
     .mainMenu {
         display: flex;
         justify-content: space-between;
-        height: 100px;
+        height: 70px;
         width: 700px;
         right: 100px;
         top: 0;    
+    }
+
+    .mainMenu a:hover::after {
+        transition: all 0.3s;
+        content: "";
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        bottom: -5px;
+        border: 2px solid white;
+        border-radius: 10px;
     }
 
     .mainMenu > .mainLinks {
@@ -50,7 +64,15 @@
 }
 
 @media screen and (max-width: 999px) {
+    .mainMenu {
+        transition: all 0.3s;
+    }
+
     .mainMenu > .mainLinks :hover {
+        border-left: 10px solid white;
+    }
+
+    .scrollD  > .mainLinks :hover {
         border-left: 10px solid rgb(106, 164, 187);
         background-color: skyblue;
     }
