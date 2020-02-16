@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="CSS/main.css">
     <title>HamburgarMeny</title>
 </head>
+<script>window.onload=function(){toggleNightMode()}</script>
 <body>
-    <nav class="menu skyblue">
+    <nav class="menu">
         <div class="title">
             <a href="#">Ishii.se</a>
         </div>
-        <ul class="mainMenu skyblue">
+        <ul class="mainMenu">
             <li class="mainLinks"><a href="#">Home</a></li>
             <li class="mainLinks"><a href="#">About</a></li>
             <li class="mainLinks"><a href="#">Projects</a></li>
@@ -22,9 +23,11 @@
         </ul>
 
         <label class="nightModeSwitch">
-            <input class="darkMode" type="checkbox">
+            <input class="darkMode" type="checkbox" id="darkModeCheck" onclick="toggleNightMode()">
             <span class="nightModeSlider round"></span>
         </label>
+        
+        <style>.nightModeSwitch{margin-right:20px}.nightModeSwitch{position:relative;display:inline-block;width:60px;height:34px}.nightModeSwitch input{opacity:0;width:0;height:0}.nightModeSlider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#fffbfb;-webkit-transition:.4s;transition:.4s}.nightModeSlider:before{position:absolute;content:"\1F31E";height:26px;width:26px;left:0;top:0;bottom:4px;font-size:1.5rem;background-color:rgba(255,255,255,0);-webkit-transition:.4s;transition:.4s}.darkMode:checked+.nightModeSlider{background-color:#494949}.darkMode:checked+.nightModeSlider:before{background-color:rgba(255,255,255,0);content:"\1F311"}.darkMode:focus+.nightModeSlider{box-shadow:0 0 1px #2196f3}.darkMode:checked+.nightModeSlider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px)}.nightModeSlider.round{border-radius:34px}.nightModeSlider.round:before{border-radius:50%}</style> <script>function toggleNightMode(){document.getElementById("darkModeCheck").checked?(document.querySelector(".mainPart").classList.add("mainPartdm"),document.querySelector("body").classList.add("mainPartdm")):(document.querySelector(".mainPart").classList.remove("mainPartdm"),document.querySelector("body").classList.remove("mainPartdm"))}</script>
 
         <div class="burger">
             <div class="line1"></div>

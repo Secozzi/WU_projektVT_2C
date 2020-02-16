@@ -1,3 +1,4 @@
+/* Styling everything to behave in a way */
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -7,19 +8,24 @@
     margin: 0px;
 }
 
+/* Remove outline when object is in focus */
 *:focus {
     outline: 0;
 }
 
+/* Remove animation when resizing window */
 .resize-animation-stopper * {
     animation: none !important;
     transition: none !important;
 }
 
+
+/* Remove ability to scroll to side */
 body {
     overflow-x: hidden;
 }
 
+/* Navbar */
 nav {
     justify-content: flex-end;
     font-family: sans-serif;
@@ -33,10 +39,21 @@ nav {
     top: 0;
 }
 
-.scrollD {
-    background-color: lightblue;
+/* Style menubar when scrolling down, on desktop only style whole bar and not where the links are, to solve overlapping issues that is only present on desktop */
+@media screen and (min-width: 1000px) {
+    .menu.scrollD {
+        background-color: #1F1F1F;
+    }
 }
 
+@media screen and (max-width: 999px) {
+    .scrollD {
+        background-color: #1F1F1F;
+    }
+
+}
+
+/* Style title 'Ishii.se' */
 .title {
     position: fixed;
     letter-spacing: 3px;
@@ -50,11 +67,13 @@ nav {
     color: white;
 }
 
+/* Content */
 .mainPart {
     background-color: white;
     color: black;
 }
 
+/* Main background on top */
 #background {
     margin: 0px;
     padding: 0px;
@@ -62,17 +81,8 @@ nav {
     height: 100vh;
 }
 
-@media screen and (max-width: 999px) {
-    .mainMenudm > .mainLinks :hover {
-        border-left: 10px solid #414141;
-        background-color: #181818;
-    }
-}
 
-.mainMenudm {
-    background-color: #1F1F1F;
-}
-
+/* Content when dark mode is activated */
 .mainPartdm {
     background-color: #121212;
     color: white;

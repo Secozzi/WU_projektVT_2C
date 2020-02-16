@@ -1,7 +1,7 @@
 const burger = document.querySelector('.burger');
-const dmSlider = document.querySelector('.darkMode')
-const dmSkyBlue = document.querySelectorAll('.skyblue');
-const dmSub = document.querySelectorAll('.subdm');
+const menu = document.querySelector('.menu')
+const mainMenu = document.querySelector('.mainMenu')
+
 
 window.onscroll = function() {navScroll()};
 
@@ -10,29 +10,19 @@ function navScroll() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     console.log(winScroll);
     if (winScroll > 50) {
-        document.querySelector(".menu").classList.add("scrollD")
-        document.querySelector(".mainMenu").classList.add("scrollD")
+        menu.classList.add("scrollD")
+        mainMenu.classList.add("scrollD")
     } else {
-        document.querySelector(".menu").classList.remove("scrollD")
-        document.querySelector(".mainMenu").classList.remove("scrollD")
+        menu.classList.remove("scrollD")
+        mainMenu.classList.remove("scrollD")
     }
 }
 
 function toggleBurgerMenu () {
-    document.querySelector('.mainMenu').classList.toggle('navActive');
+    mainMenu.classList.toggle('navActive');
+    menu.classList.toggle('navActive');
+    document.body.classList.toggle('navActive');
     burger.classList.toggle('toggle');
-}
-
-function toggleNightMode() {
-    var i;
-    for (i = 0;i<dmSkyBlue.length;i++) {
-        dmSkyBlue[i].classList.toggle('mainMenudm');
-    }
-    for (i = 0;i<dmSub.length;i++) {
-        dmSub[i].classList.toggle('subMenudm');
-    }
-    document.querySelector('.mainPart').classList.toggle('mainPartdm');
-    document.querySelector('body').classList.toggle('mainPartdm');
 }
 
 let resizeTimer;
@@ -45,4 +35,3 @@ window.addEventListener("resize", () => {
 });
 
 burger.addEventListener('click', toggleBurgerMenu)
-dmSlider.addEventListener('change', toggleNightMode)

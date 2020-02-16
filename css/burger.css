@@ -1,9 +1,17 @@
+/* animate styling 'menu' */
 .menu {
-    transition: all 0.3s; 
+    transition: background-color 0.3s;
 }
 
+/* Style menu when not scrolled down */
+.menu:not(.scrollD) {
+    background-color: rgba(100,100,100,0.4);
+}
+
+/* Style div that holds links */
 .mainMenu {
     font-family: "Quicksand", sans-serif;
+    transition-delay: 2s;
     table-layout: fixed;
     align-items: center;
     position: absolute;
@@ -14,6 +22,7 @@
     top: 70px;    
 }
 
+/* Style the links */
 .mainMenu a {
     border-left: 10px solid transparent;
     vertical-align: middle;
@@ -25,10 +34,7 @@
     width: 100%;
 }
 
-.nightModeSwitch {
-    margin-right: 20px;
-}
-
+/* Phones */
 @media screen and (max-width: 500px) {
     .mainMenu {
         right: -100%;
@@ -36,7 +42,9 @@
     }
 }
 
+/* Desktop */
 @media screen and (min-width: 1000px) {
+    /* Line up links in a flexbox */
     .mainMenu {
         display: flex;
         justify-content: space-between;
@@ -46,6 +54,7 @@
         top: 0;    
     }
 
+    /* Hovering links */
     .mainMenu a:hover::after {
         transition: all 0.3s;
         content: "";
@@ -57,26 +66,20 @@
         border-radius: 10px;
     }
 
+    /* Links and only links */
     .mainMenu > .mainLinks {
         position: relative;
         list-style: none;
     }
 }
 
+/* Smaller screen */
 @media screen and (max-width: 999px) {
     .mainMenu {
         transition: all 0.3s;
     }
 
-    .mainMenu > .mainLinks :hover {
-        border-left: 10px solid white;
-    }
-
-    .scrollD  > .mainLinks :hover {
-        border-left: 10px solid rgb(106, 164, 187);
-        background-color: skyblue;
-    }
-
+    /* Line up items like a burger menu */
     .mainMenu > .mainLinks{
         position: relative;
         text-align: center;
@@ -84,10 +87,24 @@
         list-style: none;
     }
 
-    .navActive {
-        transform: translate(-100%);
+    /* Hovering links */
+    .mainMenu > .mainLinks :hover {
+        border-left: 10px solid white;
     }
 
+    .scrollD > .mainLinks :hover {
+        border-left: 10px solid #414141;
+        background-color: #181818;
+    }
+
+    /* mainMenu when on top */
+    .mainMenu:not(.scrollD) {background-color: rgba(100,100,100,0.4);}
+    /* Disable scroll and show burgermenu when modal is called */
+    .mainMenu.navActive, .burger.navActive {transform: translate(-100%);}
+    .menu.navActive {padding-right: 17px;}
+    body.navActive {overflow: hidden;margin-right: 17px;}
+
+    /* Burger 'lines' and their animation */
     .burger div {
         background-color: white;
         transition: all 0.3s;

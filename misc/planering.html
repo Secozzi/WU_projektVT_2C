@@ -1,4 +1,4 @@
-
+<!--
 Skip to content
 Pull requests
 Issues
@@ -25,6 +25,7 @@ Settings
 WU_projektVT_2C/misc/planering.html
 Folke Ishii fixed documentation 0a495c4 7 days ago
 171 lines (138 sloc) 4.8 KB
+-->
 <!-- Se den kommenterade texten i detta html-dokument för att se exempel och förklaringar på hur dokumentationen ska vara uppbyggd. -->
 
 <!-- Länka till detta planeringsdokument i footern till din hemsida. -->
@@ -37,16 +38,12 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dokumentation projekt Vt</title>
 
-    <style>
-        table, td, th {
-            border: 1px solid black
-        }
-    </style>
+    <style>table{border-collapse:collapse}td,th{padding:5px;text-align:left}th{background-color:#212121;color:#fff}tr:nth-child(even){background-color:#f2f2f2}.main{border-radius:20px;border:2px solid #000;text-align:center;width:50vw;margin:auto;padding:20px}h3{overflow:hidden;text-align:center}h3:after,h3:before{background-color:#000;content:"";display:inline-block;height:1px;position:relative;vertical-align:middle;width:50%}h3:before{right:.5em;margin-left:-50%}h3:after{left:.5em;margin-right:-50%}</style>
 
 </head>
 <body>
-
-    <h1>Dokumentation projekt Vt</h1>
+    <div class="main">
+    <h1>Folke Ishii - Dokumentation projekt Vt</h1>
 
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
@@ -61,9 +58,9 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
 
-    <table>
+    <table style="margin: 0 auto;">
         <tr>
-            <th>Vecka</th><th>På lektionen</th><th>Utanför lektionen</th>
+            <th>Vecka&nbsp;&nbsp;</th><th>På lektionen</th><th>Utanför lektionen</th>
         </tr>
 
         <tr>
@@ -82,7 +79,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
 				Fixa buggar
             </td>
             <td>
-				Ändra javascript så darkmode fungerar korrekt + cookies
+				Ändra javascript så darkmode fungerar korrekt
             </td>
         </tr>
 
@@ -99,10 +96,10 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
         <tr>           
             <td>7</td>
             <td>
-            No
+            -
             </td>
             <td>
-            Starta på main del och andra
+            Starta på innehållet och de andra hemsidorna
             </td>
         </tr>
 
@@ -163,13 +160,16 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
     <!-- Här skriver du efter varje lektion. Vad har jag gjort? Vad gick bra? Vad gick mindre bra? Vad ska jag tänka på till nästa gång? -->
 
     <h3>Lektion vecka 4</h3>
-    Lade ihop kod jag gjorde hemma med projektet. Fixade lite hur burgemenyn fungerade och lite buggar.
+    Första lektionen så lade jag ihop kod som jag hade hemma. Det var inte mycket så jag lade till lite grejer för att den ska bättre anpassa sig till hemsidan och projektet i skolan. Att merge:a koden var inga problem och att lägga till lite färger, jag råkade dock göra det i fel dokument och gjorde allting i hamburgar-meny mappen istället för WU_projektVT_2C mappen. Annars gick det som jag gjorde bra, då jag fick inte några stora problem. Tills nästa gång, ska jag nog veta mer om hur jag ska strukturera css, html och javascript. Sen ska jag förbättra planeringen om vad jag ska göra.
 
     <h3>Lektion vecka 5</h3>
-    Fixade till darkmode och lite buggar
+    Den här lektionen kunde jag tyvärr inte jobba så mycket på hemsidan då jag hjälpte mest andra för att få sina hemsidor att fungera. Det var inte dock bortkastad tid då jag lärde mig också då jag behövde googla på mycket för att få deras hemsida att fungera, och det kunde jag också använda på min hemsida. Jag hjälpte dock inte andra hela tiden utan 'lekte' runt i JSFiddle om hur media queries fungerar och hur man kan ändra layouts beroende på hur stor fönstret är. Jag lärde mig det jag behövde om media queries, tills nästa gång borde jag nog jobba mer på min hemsida än att hjälpa andra.
 
     <h3>Lektion vecka 6</h3>
-    Tog bort lite från menyn, och fixade desktop- och mobilanpassning
+    Implementerade det jag lärde mig om media queries i JSFiddle vekca 5. Layouten ändras nu beroende på om man är på dator, mobil eller har en förminskat fönster på dator med mera. Det fungerade bra, och jag behövde göra lite ändringar gällande menyn om jag skulle få media queries att fungera. Jag har behövt ändrat ganska mycket för att det nya jag vill göra fungerar inte annars. Jag har försökt tänka på ett sätt som gör det väldigt lätt att ändra på något om jag skulle vilja göra stor ändringar i framtiden, men eftersom jag inte vet vilka ändringar detta är så är det enda sättet att veta om det fungerar är att vänta tills jag ska göra dessa ändringar. Annars gick det jag ville göra väldigt bra och tills nästa gång ska jag nog tänka på att strukturera html, css och javascripten bättre.
+
+    <h3>Under lovet</h3>
+    Under lovet har jag hunnit jobba lite, och då gjorde jag en code cleanup för att ha en bättre struktur, och lade in kommentarer så jag vet vilken css/html/js bit som gör vad. Det gick gick väldigt bra att kunna kommentera, nu behöver jag bara läsa kommentaren för att vet vad som gör vad vilket gör det väldigt lätt för mig att ändra på någonting. Det förbättrade även strukturen att göra en cleanup då jag märkte att jag hade mycket onödigt med. Jag märkte även att jag hade vissa bitar upprepade. På själva hemsidan gjorde jag dock inte mycket utan ändrade lite på färger och fixade så darkmode fungerade korrekt. Nu skulle jag kalla menyn klar, vilket är skönt för det är den som är mest komplicerad. Tills nästa gång ska jag tänka på att inte upprepa och att jag ska göra en till cleanup strax innan jag är klar med allt. 
 
     <h3>Lektion vecka 8</h3>
     <!-- Fyll på med dokumentation här. -->
@@ -193,10 +193,10 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
-
+    </div>
 </body>
 </html>
-
+<!--
     © 2020 GitHub, Inc.
     Terms
     Privacy
@@ -210,4 +210,5 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
     Training
     Blog
     About
+-->
 
