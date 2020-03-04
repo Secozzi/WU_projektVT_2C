@@ -92,7 +92,7 @@
         border-left: 10px solid white;
     }
 
-    .scrollD > .mainLinks :hover {
+    .mainLinks :hover {
         border-left: 10px solid #414141;
         background-color: #181818;
     }

@@ -22,6 +22,7 @@ function toggleBurgerMenu () {
     menu.classList.toggle('navActive');
     document.body.classList.toggle('navActive');
     document.querySelector('.nameTitle').classList.toggle('navActive');
+    document.querySelector('.nameTitleDisc').classList.toggle('navActive')
     burger.classList.toggle('toggle');
 }
 
@@ -34,4 +35,4 @@ window.addEventListener("resize", () => {
   }, 400);
 });
 
-burger.addEventListener('click', toggleBurgerMenu)
+burger.addEventListener('click', toggleBurgerMenu);

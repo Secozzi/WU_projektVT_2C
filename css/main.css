@@ -67,7 +67,7 @@ nav {
     color: white;
 }
 
-/* Main Title, my name */
+/* Main Title div, my name */
 .nameTitleDiv {
     position: absolute;
     display: flex;
@@ -83,10 +83,12 @@ nav {
     padding-right: 17px;
 }
 
+/* Name text */
 .nameTitle {
     text-align: center;
     position: relative;
     width: 100%;
+    font-family: Verdana;
     font-size: 15vw;
     color: white;
 }
@@ -110,11 +112,14 @@ nav {
 .nameTitleDisc {
     position: relative;
     text-align: center;
+    font-family: Verdana;
     margin-top: -10px;
     font-size: 25px;
     width: 100%;
     color: white;
 }
+
+.nameTitleDisc.navActive {padding-right: 17px}
 
 /*
 @media screen and (max-width:1500px){.nameTitle{font-size:200px}}
@@ -132,7 +137,7 @@ nav {
 
 /* Main background on top */
 #background {
-    margin: 0px;
+    margin-bottom: -5px;
     padding: 0px;
     width: 100%;
     height: 100vh;
@@ -143,4 +148,105 @@ nav {
 .mainPartdm {
     background-color: #121212;
     color: white;
+}
+
+
+/* 'About' div in mage  */
+/*
+.aboutDiv {
+    margin-top: 0px;
+    background-color: white;
+    width: 100vw;
+    height: calc(100vh - 70px);
+}
+
+.meImg {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-height: 80%;
+    left: 10%;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.aboutDiv-container {
+    position: relative;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.meTitle {
+    display: inline-block;
+    font-family: Verdana;
+    font-size: 40px;
+}
+
+.meDisc {
+    display: inline-block;
+}
+*/
+
+.main-container {
+    max-width: 60%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.main-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.aboutDiv-container {
+    align-self: center;
+    margin-left: 20px;
+    height: 50%;
+}
+
+.aboutDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 70px);
+}
+
+.meImg-container {
+    max-width: 75%;
+}
+
+.meImg {
+    width: 550px;
+    bottom: 0;
+    left: -5vw;
+}
+
+.meMore {
+    padding: 0 24px;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    transition: all 300ms linear 0s;
+}
+
+.meMore:hover {
+    background-position: right center;
 }
