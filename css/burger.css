@@ -5,7 +5,8 @@
 
 /* Style menu when not scrolled down */
 .menu:not(.scrollD) {
-    background-color: rgba(100,100,100,0.4);
+    margin-top: 10px;
+    background-color: rgba(100,100,100,0);
 }
 
 /* Style div that holds links */

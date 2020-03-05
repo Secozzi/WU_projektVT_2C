@@ -91,38 +91,43 @@ nav {
     text-align: center;
     position: relative;
     width: 100%;
-    font-family: Verdana;
+    font-family: "Sunflower", sans-serif;;
     font-size: 8vw;
     color: white;
-}
-
-/* Line under title */
-.nameTitle::after {
-    display: block;
-    content: "";
-    width: 45%;
-    height: 3px;
-    background: white;
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    margin-left: auto; 
-    margin-right: auto; 
 }
 
 /* Description of title */
 .nameTitleDisc {
     position: relative;
     text-align: center;
-    font-family: Verdana;
+    font-family: "Sunflower", sans-serif;;
     margin-top: -10px;
     font-size: 25px;
     width: 100%;
     color: white;
 }
-
 .nameTitleDisc.navActive {padding-right: 17px}
+
+/* Styling of buttons under title disc */
+.title-btn {
+    transition: all 0.2s;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 8px;
+    border-radius: 45px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    background-color: white;
+    color: black !important;
+}
+
+.title-btn:hover {
+    background: linear-gradient(to right, #ABC1CF, #2E6172);
+    color: white !important;
+}
 
 /*
 @media screen and (max-width:1500px){.nameTitle{font-size:200px}}
@@ -174,6 +179,7 @@ nav {
     background-position: right center;
 }
 
+/* About me section */
 #about {
     padding-top: 98px;
     padding-bottom: 101px;
@@ -238,24 +244,18 @@ nav {
     color: #d6c6b2;
 }
 
+/* Projects section */
 #code {
     padding-top: 98px;
     padding-bottom: 101px;
-    background-image: url("../img/light_mode_code.jpg");
+    background-image: url("../img/code_background.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#code.darkMode {
-    background-image: url("../img/dark_mode_code.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
+/* Blog section */
 #blog {
     padding-top: 98px;
     padding-bottom: 101px;

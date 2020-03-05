@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootStrap.css">
     <link rel="stylesheet" href="css/darkSlider.css">
     <link rel="stylesheet" href="css/burger.css">
@@ -40,8 +40,12 @@
 
     <div class="mainBody">
         <div class="nameTitleDiv">
-            <h1 class="nameTitle">I'm Folke Ishii</h1>
-            <p class="nameTitleDisc">A student at NTI-Johanneberg that likes to code</p>    
+            <h1 class="nameTitle">Hello, I'm Folke Ishii</h1>
+            <p class="nameTitleDisc">I am a student at NTI-Johanneberg that likes to code</p>
+            <div class="title-btn-box">
+                <a class="title-btn">MY WORK</a>
+                <a class="title-btn">CONTACT ME</a>
+            </div> 
         </div>
         <img id="background" src="img/background.jpg" alt="background">
 
@@ -172,14 +176,12 @@
         (
             document.querySelector(".mainPart").classList.add("mainPartdm"), 
             document.querySelector("body").classList.add("mainPartdm"), 
-            document.querySelector("#code").classList.add("darkMode"),
             doWhiteText()
         ) 
         : 
         (
             document.querySelector(".mainPart").classList.remove("mainPartdm"), 
             document.querySelector("body").classList.remove("mainPartdm"), 
-            document.querySelector("#code").classList.remove("darkMode"),
             doBlackText()
         )
     }
