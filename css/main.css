@@ -152,6 +152,7 @@ nav {
     background-color: #121212;
     color: white;
 }
+
 /* Styling Info types */
 .social-link-text {
     padding: 0 24px;
@@ -176,8 +177,7 @@ nav {
 #about {
     padding-top: 98px;
     padding-bottom: 101px;
-    background-image: url("../img/home-banner.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-image: url("../img/home-banner.jpg");
 }
 
 .fa-play {
@@ -215,25 +215,6 @@ nav {
     border-color: #d6c6b2;
 }
 
-
-#about .about-img{
-    position: relative;
-    
-}
-
-#about .about-img{
-    position: relative;
-    
-}
-
-#about .about-img .man{
-    position: absolute;
-    bottom: 161px;
-    top: 12px;
-    left: -2px;
-    
-}
-
 .color-3{
     color: #d6c6b2;
 }
@@ -258,7 +239,6 @@ nav {
 }
 
 #code {
-    margin-top: 98px;
     padding-top: 98px;
     padding-bottom: 101px;
     background-image: url("../img/light_mode_code.jpg")
@@ -268,7 +248,9 @@ nav {
     background-image: url("../img/dark_mode_code.jpg");
 }
 
-.codeImg {
+.img-responsive {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: auto;
+    margin: auto; 
 }
