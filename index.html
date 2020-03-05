@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/darkSlider.css">
     <link rel="stylesheet" href="CSS/burger.css">
     <link rel="stylesheet" href="CSS/main.css">
@@ -27,12 +29,6 @@
             <span class="nightModeSlider round"></span>
         </label>
 
-        <script>
-        function toggleNightMode() {
-            document.getElementById("darkModeCheck").checked?(document.querySelector(".mainPart").classList.add("mainPartdm"),document.querySelector("body").classList.add("mainPartdm")):(document.querySelector(".mainPart").classList.remove("mainPartdm"),document.querySelector("body").classList.remove("mainPartdm"))
-        }
-        </script>
-
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -44,38 +40,127 @@
 
     <div class="mainBody">
         <div class="nameTitleDiv">
-            <h1 class="nameTitle">Folke Ishii</h1>
+            <h1 class="nameTitle">I'm Folke Ishii</h1>
             <p class="nameTitleDisc">A student on NTI-Johanneberg that likes to code things</p>    
         </div>
         <img id="background" src="img/background.jpg" alt="background">
 
 
         <div class="mainPart">
-            <div class="main-container">
-                <div class="main-row">
-                    <div class="aboutDiv">
-                        <div class="meImg-container">
-                            <!-- Placeholder, enda bilden jag hade på datorn med rätt proportioner, 
-                            jag är ledsen dör innehållet -->
-                            <img class="meImg" src="img/aboutMe.jpg" alt="ImageOfME">
+
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="about-img">
+                                <img class="man" src="img/aboutMe.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="aboutDiv-container">
-                            <h3 class="meTitle">Hello</h3>
-                            <p class="meMe">I'm Folke Ishii</p>
-                            <p class="meDisc">here is more about me</p>
-                            <a class="meMore" href="#">Learn more</a>
+                        <br>
+                        <div class="col-md-7 about-right">
+
+                            <h2 class="color-3">About Me</h2>
+                            <p class="p-first text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil autem dolores amet ad optio aperiam laboriosam architecto pariatur recusandae, dolor in est excepturi non mollitia omnis dignissimos atque ex.
+                            </p>
+
+                            <p class="p-second text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia assumenda quae sapiente accusamus excepturi ipsum ullam, fugiat accusantium doloremque quas! Iusto tenetur voluptatem, accusantium debitis magni natus nihil at.
+                            </p>
+
+                            <a class="social-link-text" href="#">Learn more</a>
+
+                            <ul class="about-link">
+                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                <li><a href=""><i class="fa fa-at"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+
                         </div>
                     </div>
-
-
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <section id="code">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                        <div class="coldCode">
+                            <h2 class="color-3">I'm also a programmer</h2>
+
+                            <p class="p-first text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil autem dolores amet ad optio aperiam laboriosam architecto pariatur recusandae, dolor in est excepturi non mollitia omnis dignissimos atque ex.
+                            </p>
+
+                            <p class="p-second text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia assumenda quae sapiente accusamus excepturi ipsum ullam, fugiat accusantium doloremque quas! Iusto tenetur voluptatem, accusantium debitis magni natus nihil at.
+                            </p>
+
+                            <a class="social-link-text" href="#">Learn more</a>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="col-md-7 about-right">
+                            <div class="about-img">
+                                <img class="man codeImg" src="img/aboutMe.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
 
             
+        </div>
     </div>
 </body>
 </html>
+
+<script>
+    const whiteText = document.querySelectorAll('.text-white')
+    const color3 = document.querySelectorAll('.color-3')
+
+    function doBlackText() {
+        var i;
+        for (i=0;i<whiteText.length;i++) {
+            whiteText[i].classList.add("lightMode");
+        }
+        var j;
+        for (j=0;j<color3.length;j++) {
+            color3[j].classList.add("light3")
+        }
+    }
+
+    function doWhiteText() {
+        var i;
+        for (i=0;i<whiteText.length;i++) {
+            whiteText[i].classList.remove("lightMode");
+        }
+        var j;
+        for (j=0;j<color3.length;j++) {
+            color3[j].classList.remove("light3")
+        }
+    }
+
+    function toggleNightMode() {
+        document.getElementById("darkModeCheck").checked ? 
+        (
+            document.querySelector(".mainPart").classList.add("mainPartdm"), 
+            document.querySelector("body").classList.add("mainPartdm"), 
+            document.querySelector("#code").classList.add("darkMode"),
+            doWhiteText()
+        ) 
+        : 
+        (
+            document.querySelector(".mainPart").classList.remove("mainPartdm"), 
+            document.querySelector("body").classList.remove("mainPartdm"), 
+            document.querySelector("#code").classList.remove("darkMode"),
+            doBlackText()
+        )
+    }
+</script>
 
 <!--       _
        .__(.)< (MEOW)
