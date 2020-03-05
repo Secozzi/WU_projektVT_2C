@@ -37,7 +37,7 @@ nav {
     position: fixed;
     display: flex;
     z-index: 4;
-    height: 70px;
+    height: 40px;
     width: 100vw;
     right: 0;
     top: 0;
@@ -61,7 +61,7 @@ nav {
     position: fixed;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     left: 20px;
 }
 
@@ -77,7 +77,7 @@ nav {
     flex-direction: column;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 35%;
     align-items: center;
     margin-top: 0;
 }
@@ -241,11 +241,24 @@ nav {
 #code {
     padding-top: 98px;
     padding-bottom: 101px;
-    background-image: url("../img/light_mode_code.jpg")
+    background-image: url("../img/light_mode_code.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #code.darkMode {
     background-image: url("../img/dark_mode_code.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#blog {
+    padding-top: 98px;
+    padding-bottom: 101px;
 }
 
 .img-responsive {

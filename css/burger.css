@@ -16,10 +16,10 @@
     align-items: center;
     position: absolute;
     display: table;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 40px);
     right: -40%;
     width: 40%;
-    top: 70px;    
+    top: 40px;    
 }
 
 /* Style the links */
@@ -29,7 +29,7 @@
     display: table-cell;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
     width: 100%;
 }
@@ -43,13 +43,13 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
     /* Line up links in a flexbox */
     .mainMenu {
         display: flex;
         justify-content: space-between;
-        height: 70px;
-        width: 700px;
+        height: 40px;
+        width: 500px;
         right: 100px;
         top: 0;    
     }
@@ -61,8 +61,8 @@
         position: absolute;
         left: 25%;
         right: 25%;
-        bottom: -5px;
-        border: 2px solid white;
+        bottom: 0px;
+        border: 1px solid white;
         border-radius: 10px;
     }
 
@@ -74,7 +74,7 @@
 }
 
 /* Smaller screen */
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 749px) {
     .mainMenu {
         transition: all 0.3s;
     }
