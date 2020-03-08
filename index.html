@@ -57,7 +57,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="about-img">
-                                <img class="img-responsive man" src="img/aboutMe.jpg" alt="">
+                                <img class="img-responsive man aboutImg" src="img/aboutMe.jpg" alt="">
                             </div>
                         </div>
                         <br>
@@ -91,13 +91,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <h2 class="color-3">I am a programmer</h2>
+                            <h2 class="color-3-perm">I am a programmer</h2>
 
-                            <p class="p-first text-white">
+                            <p class="p-first perm-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil autem dolores amet ad optio aperiam laboriosam architecto pariatur recusandae, dolor in est excepturi non mollitia omnis dignissimos atque ex.
                             </p>
 
-                            <p class="p-second text-white">
+                            <p class="p-second perm-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia assumenda quae sapiente accusamus excepturi ipsum ullam, fugiat accusantium doloremque quas! Iusto tenetur voluptatem, accusantium debitis magni natus nihil at.
                             </p>
 
@@ -142,6 +142,30 @@
 
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footerMe">
+            <h3 class="footerTitle">About me</h3>
+            <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
+        </div>
+        <div class="footerLinks footerPseudo">
+            <h3 class="footerTitle">Links</h3>
+            <a href="#">Home</a>
+            <a href="about.html">About me</a>
+            <a href="projects.html">My projects</a>
+            <a href="blog.html">My blog</a>
+        </div>
+        <div class="footerContact footerPseudo">
+            <h3 class="footerTitle">Contact</h3>
+            <p>folke.ishii@gmail.com</p>
+            <p>+46 73-675 82 70</p>
+            
+        </div>
+        <div class="footerCopyright">
+            Copyright © 2020 Ishii.se | All Rights Reserved
+        </div>
+    </footer>
+
 </body>
 </html>
 
@@ -175,13 +199,17 @@
         document.getElementById("darkModeCheck").checked ? 
         (
             document.querySelector(".mainPart").classList.add("mainPartdm"), 
-            document.querySelector("body").classList.add("mainPartdm"), 
+            document.querySelector("body").classList.add("mainPartdm"),
+            document.querySelector("#about").classList.add("aboutdm"),
+            document.querySelector("#blog").classList.add("blogdm"),
             doWhiteText()
         ) 
         : 
         (
             document.querySelector(".mainPart").classList.remove("mainPartdm"), 
-            document.querySelector("body").classList.remove("mainPartdm"), 
+            document.querySelector("body").classList.remove("mainPartdm"),
+            document.querySelector("#about").classList.remove("aboutdm"),
+            document.querySelector("#blog").classList.remove("blogdm"),
             doBlackText()
         )
     }

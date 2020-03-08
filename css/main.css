@@ -82,7 +82,7 @@ nav {
     margin-top: 0;
 }
 
-.nameTitle.navActive {
+.nameTitleDiv.navActive {
     padding-right: 17px;
 }
 
@@ -106,7 +106,6 @@ nav {
     width: 100%;
     color: white;
 }
-.nameTitleDisc.navActive {padding-right: 17px}
 
 /* Styling of buttons under title disc */
 .title-btn {
@@ -145,6 +144,7 @@ nav {
 
 /* Main background on top */
 #background {
+    object-fit: cover;
     margin-bottom: -5px;
     padding: 0px;
     width: 100%;
@@ -184,7 +184,13 @@ nav {
     padding-top: 98px;
     padding-bottom: 101px;
     background-image: url("../img/home-banner.jpg");
+    object-fit: cover;
 }
+
+#about.aboutdm {
+    background-image: url("../img/dark_home-banner.jpg");
+}
+
 
 .fa-play {
     font-size: 100px;
@@ -259,6 +265,11 @@ nav {
 #blog {
     padding-top: 98px;
     padding-bottom: 101px;
+    background-color: #EBEEF3;
+}
+
+#blog.blogdm {
+    background-color: #1b262c;
 }
 
 .img-responsive {
@@ -266,4 +277,74 @@ nav {
     height: auto;
     display: block;
     margin: auto; 
+}
+
+.perm-white {
+    color: white !important;
+}
+
+.color-3-perm {
+    color: #d6c6b2 !important;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 60px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "fa fl fc"
+        "fr fr fr"
+    ;
+}
+
+.footer > div {
+    margin-bottom: 100px;
+    margin-right: 50px;
+    font-family: "Oxygen", sans-serif;
+}
+
+.footerTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footerMe {
+    grid-area: fa;
+}
+
+.footerMeDisc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footerLinks {
+    grid-area: fl;
+    position: relative;
+}
+
+.footerPseudo::before {
+    content: "";
+    background-color: orange;
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin: 0 auto;
+}
+
+.footerContact {
+    grid-area: fc;
+    position: relative;
+}
+
+.footerCopyright {
+    grid-area: fr
 }
