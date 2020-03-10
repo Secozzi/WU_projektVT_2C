@@ -21,8 +21,7 @@ function toggleBurgerMenu () {
     mainMenu.classList.toggle('navActive');
     menu.classList.toggle('navActive');
     document.body.classList.toggle('navActive');
-    document.querySelector('.nameTitle').classList.toggle('navActive');
-    document.querySelector('.nameTitleDisc').classList.toggle('navActive')
+    document.querySelector('.nameTitleDiv').classList.toggle('navActive');
     burger.classList.toggle('toggle');
 }
 

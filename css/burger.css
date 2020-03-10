@@ -99,7 +99,10 @@
     }
 
     /* mainMenu when on top */
-    .mainMenu:not(.scrollD) {background-color: rgba(100,100,100,0.4);}
+    .mainMenu:not(.scrollD) {
+        background-color: rgba(100,100,100,0.4);
+    }
+
     /* Disable scroll and show burgermenu when modal is called */
     .mainMenu.navActive, .burger.navActive {transform: translate(-100%); background-color: #1F1F1F;}
     .menu.navActive {padding-right: 17px; background-color: #1F1F1F;}
@@ -113,10 +116,11 @@
         width: 25px;
         height: 3px;
         margin: 5px;
+        margin-right: 50px;
     }
 
     .toggle .line1 {transform: rotate(-45deg) translate(-5px, 6px);}
     .toggle .line3 {transform: rotate(45deg) translate(-5px, -6px);}
     .toggle .line2 {opacity: 0;}
-    .burger {margin-right: 50px;cursor: pointer;}
+    .burger {margin-right: -30px;cursor: pointer;}
 }
