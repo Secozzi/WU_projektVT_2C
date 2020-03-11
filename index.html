@@ -14,9 +14,9 @@
 <script>window.onload=function(){toggleNightMode()}</script>
 <body>
     <nav class="menu">
-        <div class="title">
+        <section class="title">
             <a href="#">Ishii.se</a>
-        </div>
+        </section>
         <ul class="mainMenu">
             <li class="mainLinks"><a href="#">Home</a></li>
             <li class="mainLinks"><a href="#about">About</a></li>
@@ -29,16 +29,16 @@
             <span class="nightModeSlider round"></span>
         </label>
 
-        <div class="burger">
+        <section class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
-        </div>
+        </section>
     </nav>
 
     <script src="js/script.js"></script>
 
-    <div class="mainBody">
+    <main class="mainBody">
         <div class="nameTitleDiv">
             <h1 class="nameTitle">Hi, I'm Folke Ishii</h1>
             <p class="nameTitleDisc">I am a student at NTI-Johanneberg that likes to code</p>
@@ -51,8 +51,8 @@
 
 
         <div class="mainPart">
-
-            <section id="about">
+            <!-- I have to use div tags here because bootstrap, the css framework I use, requires me to -->
+            <div id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -85,9 +85,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="code">
+            <div id="code">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -111,9 +111,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="blog">
+            <div id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -137,13 +137,38 @@
                         </div>
                     </div>
                 </div>
-            </section>        
+            </div>        
             
 
         </div>
-    </div>
+    </main>
 
     
+    <footer class="footer">
+        <div class="footerMe">
+            <h3 class="footerTitle">About me</h3>
+            <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
+        </div>
+        <div class="footerLinks footerPseudo footerPseudoL">
+            <h3 class="footerTitle">Links</h3>
+            <section class="footerSecLinks">
+                <a href="#">Home</a>
+                <a href="about.html">About me</a>
+                <a href="projects.html">My projects</a>
+                <a href="blog.html">My blog</a>
+            </section>
+        </div>
+        <div class="footerContact footerPseudo">
+            <h3 class="footerTitle">Contact</h3>
+            <section class="footerSecContact">
+                <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
+                <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
+            </section>
+        </div>
+    </footer>
+    <footer class="footerCopyright">
+        <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
@@ -181,6 +206,8 @@
             document.querySelector("body").classList.add("mainPartdm"),
             document.querySelector("#about").classList.add("aboutdm"),
             document.querySelector("#blog").classList.add("blogdm"),
+            document.querySelector(".footerCopyright").classList.add("copyrightdm"),
+            document.querySelector(".footer").classList.add("footerdm"),
             doWhiteText()
         ) 
         : 
@@ -189,6 +216,8 @@
             document.querySelector("body").classList.remove("mainPartdm"),
             document.querySelector("#about").classList.remove("aboutdm"),
             document.querySelector("#blog").classList.remove("blogdm"),
+            document.querySelector(".footerCopyright").classList.remove("copyrightdm"),
+            document.querySelector(".footer").classList.remove("footerdm"),
             doBlackText()
         )
     }
