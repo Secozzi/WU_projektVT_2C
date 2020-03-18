@@ -35,6 +35,7 @@
 
     <script src="JS/script.js"></script>
 
+    <main class="main_about_me">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit adipisci at repellat nobis quam dolor quos optio aliquam provident neque dolorem cupiditate saepe consequatur veritatis, iusto ratione, animi ipsam quo.
     Sint doloribus qui mollitia unde at provident neque animi accusamus quisquam laudantium nemo, velit ab corporis, dolorum sapiente, facilis nobis? Impedit nisi placeat hic officia magnam non sit quasi. Distinctio!
     Dolore autem ab quisquam ullam provident error expedita, velit aliquam vero necessitatibus nam blanditiis nobis alias eius eos distinctio voluptate minus animi sit quia? Animi nostrum eos fuga itaque pariatur!
@@ -135,47 +136,34 @@
     Consectetur nesciunt numquam temporibus tempora earum soluta maxime inventore quisquam voluptate aliquid. Ad nisi praesentium eveniet a pariatur veritatis maiores perferendis nam itaque earum, cumque laudantium qui nihil consequuntur libero.
     Dolorum sunt aut culpa in saepe neque ducimus est nulla libero, aliquid ab ipsum nisi labore officia facere illum quia nam ipsa deleniti dolores pariatur? Voluptate debitis in provident ducimus.
     Dolores dolor consectetur assumenda doloremque distinctio, placeat voluptatibus in ea nisi dolorum enim nihil odit! At, quasi consectetur tempore odio consequuntur id natus tenetur ducimus vel earum, fugit voluptatum ratione!</p>
+    </main>
+
+    <footer class="footer">
+        <div class="footerMe">
+            <h3 class="footerTitle">About me</h3>
+            <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
+        </div>
+        <div class="footerLinks footerPseudo footerPseudoL">
+            <h3 class="footerTitle">Links</h3>
+            <section class="footerSecLinks">
+                <a href="#">Home</a>
+                <a href="about.html">About me</a>
+                <a href="projects.html">My projects</a>
+                <a href="blog.html">My blog</a>
+            </section>
+        </div>
+        <div class="footerContact footerPseudo">
+            <h3 class="footerTitle">Contact</h3>
+            <section class="footerSecContact">
+                <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
+                <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
+            </section>
+        </div>
+    </footer>
+    <footer class="footerCopyright">
+        <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
 
-<script>
-    const whiteText = document.querySelectorAll('.text-white')
-    const color3 = document.querySelectorAll('.color-3')
-
-    function doBlackText() {
-        var i;
-        for (i=0;i<whiteText.length;i++) {
-            whiteText[i].classList.add("lightMode");
-        }
-        var j;
-        for (j=0;j<color3.length;j++) {
-            color3[j].classList.add("light3")
-        }
-    }
-
-    function doWhiteText() {
-        var i;
-        for (i=0;i<whiteText.length;i++) {
-            whiteText[i].classList.remove("lightMode");
-        }
-        var j;
-        for (j=0;j<color3.length;j++) {
-            color3[j].classList.remove("light3")
-        }
-    }
-
-    function toggleNightMode() {
-        document.getElementById("darkModeCheck").checked ? 
-        (
-            document.querySelector(".mainPart").classList.add("mainPartdm"), 
-            document.querySelector("body").classList.add("mainPartdm"), 
-            doWhiteText()
-        ) 
-        : 
-        (
-            document.querySelector(".mainPart").classList.remove("mainPartdm"), 
-            document.querySelector("body").classList.remove("mainPartdm"), 
-            doBlackText()
-        )
-    }
-</script>
+<script src="js/dark_mode.js"></script>
