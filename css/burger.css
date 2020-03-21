@@ -103,25 +103,13 @@
         background-color: rgba(100,100,100,0.4);
     }
 
-    /* Disable scroll and show burgermenu when modal is called */
-    .mainMenu.navActive, .burger.navActive {
-        transform: translate(-100%);
-        background-color: #1F1F1F;
-    }
-
-    .menu.navActive {
-        padding-right: 17px;
-        background-color: #1F1F1F;
-    }
-
-    body.navActive {
-        overflow: hidden;
-        margin-right: 17px;
-    }
-
     .menu.navActive:not(.scrollD) {
         margin-top: 0;
     }
+
+    /* Disable scroll and show burgermenu when modal is called */
+    .mainMenu.navActive, .burger.navActive {transform: translate(-100%); background-color: #1F1F1F;}
+    .menu.navActive {background-color: #1F1F1F;}
 
     /* Burger 'lines' and their animation */
     .burger div {

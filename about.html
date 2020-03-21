@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootStrap.css">
+    <link rel="stylesheet" href="css/darkSlider.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>About Me</title>
 </head>
+<script>window.onload=function(){toggleNightMode()}</script>
 <body>
-    <p>something about me</p>
+    <nav class="menu">
+        <div class="title">
+            <a href="#">Ishii.se</a>
+        </div>
+        <ul class="mainMenu">
+            <li class="mainLinks"><a href="index.html">Home</a></li>
+            <li class="mainLinks"><a href="#about">About</a></li>
+            <li class="mainLinks"><a href="projects.html">Projects</a></li>
+            <li class="mainLinks"><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <label class="nightModeSwitch">
+            <input class="darkMode" type="checkbox" id="darkModeCheck" onclick="toggleNightMode()">
+            <span class="nightModeSlider round"></span>
+        </label>
+
+        <section class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </section>
+    </nav>
+
+    <script src="JS/script.js"></script>
+
+    <main class="main_about_me blue_nav_bar">
+        <div class="mainPart">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="about_me_image">
+                                <img class="img-responsive man aboutImg" src="img/aboutMe.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 about-right">
+                            <h2 class="color-3">About me.</h2>
+
+                            <p class="p-first text-white">
+                                Welcome to my website Ishii.se! My name is Folke Ishii, and I am a senior student at NTI Johanneberg. I study information and media technology with a goal to later study enginerring physics at Chalmers University of Technology. Even though my goals are to study physics, I'm very interested in programming. Over the years I've grown a passion for programming with languages such as Python and Rust.
+                            </p>
+
+                            <p class="p-second text-white">
+                                Since then I got an interest in developing software to help others. Even though I won't study programming, my love for it will never go away.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--
+    <main class="main_about_me">
+        <div class="main_about_me_grid_wrapper">
+            <div class="main_about_me_title_div">
+                <h1 class="main_about_me_title">About me.</h1>
+                <p class="main_about_me_disc">Everything about me, and what I do is here.<br></p>
+            </div>
+
+            <div class="main_about_me_image">
+                <img src="img/aboutMe.jpg" alt="image_of_me">
+            </div>
+
+            <section class="main_about_me_verbose">
+                <h2>Folke Ishii</h2>
+                <p>Student</p>
+                <p>Welcome to my website Ishii.se! My name is Folke Ishii, and I am a senior student at NTI Johanneberg. I study information and media technology with a goal to later study enginerring physics at Chalmers University of Technology. Even though my goals are to study physics, I'm very interested in programming. Over the years I've grown a passion for programming with languages such as Python and Rust.
+    
+                    Since then I got an interest in developing software to help others. Even though I won't study programming, my love for it will never go away. 
+                </p>
+            </section>
+        </div>
+    </main>
+    -->
+
+    <footer class="footer">
+        <div class="footerMe">
+            <h3 class="footerTitle">About me</h3>
+            <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
+        </div>
+        <div class="footerLinks footerPseudo footerPseudoL">
+            <h3 class="footerTitle">Links</h3>
+            <section class="footerSecLinks">
+                <a href="index.html">Home</a>
+                <a href="#">About me</a>
+                <a href="projects.html">My projects</a>
+                <a href="blog.html">My blog</a>
+            </section>
+        </div>
+        <div class="footerContact footerPseudo">
+            <h3 class="footerTitle">Contact</h3>
+            <section class="footerSecContact">
+                <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
+                <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
+            </section>
+        </div>
+    </footer>
+    <footer class="footerCopyright">
+        <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
+
+<script src="js/dark_mode.js"></script>
