@@ -9,6 +9,23 @@
     background-color: rgba(100,100,100,0);
 }
 
+/* Styling if navbar should be white */
+.white_b.menu:not(.scrollD) a {
+    color: #3f3f3f !important;
+}
+
+.white_b.menu.white_b_dm:not(.scrollD) a {
+    color: white !important;
+}
+
+.white_b.menu:not(.scrollD):not(.scroll_dm) span {
+    box-shadow: 0px 0px 8px 2px #7f7f7f;
+}
+
+.nav_white_background.nav_background_dm {
+    background-color: #1F1F1F;
+}
+
 /* Style div that holds links */
 .mainMenu {
     font-family: "Quicksand", sans-serif;

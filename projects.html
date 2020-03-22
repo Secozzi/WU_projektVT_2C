@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>My Projects</title>
 </head>
+<script>window.onload=function(){toggleNightMode()}</script>
 <body>
     <nav class="menu">
         <div class="title">
@@ -17,8 +18,8 @@
         </div>
         <ul class="mainMenu">
             <li class="mainLinks"><a href="index.html">Home</a></li>
-            <li class="mainLinks"><a href="#about">About</a></li>
-            <li class="mainLinks"><a href="projects.html">Projects</a></li>
+            <li class="mainLinks"><a href="about.html">About</a></li>
+            <li class="mainLinks"><a href="#">Projects</a></li>
             <li class="mainLinks"><a href="blog.html">Blog</a></li>
         </ul>
 
@@ -36,10 +37,35 @@
 
     <script src="JS/script.js"></script>
 
-    <main class="my_projects">
-        
+    <main class="my_projects nav_white_background">
+        <div class="nameTitleDiv">
+            <h1 class="nameTitle" id="projects">My projects</h1>
+        </div>
+        <img id="background" src="img/projects_background.png">
+
+        <div class="projects_list">
+            <div class="caspy_project project_content">
+                <img id="project_background" src="img/CASpy.JPG">
+                <div class="project_text">
+                    <h1 class="project_title">CASpy</h1>
+                    <p>CASpy is bridge between PyQt5 and SymPy, making it a GUI calculator capable of doing calulus and more</p>
+                    <a href="https://github.com/Secozzi/CASpy" target="_blank" class="project-btn">CODE ON GITHUB</a>
+                </div>
+            </div>
+
+            <div class="projects_break"></div>
+
+            <div class="this_website_project project_content">
+                <img id="project_background" src="img/website.JPG">
+                <div class="project_text this_website_text">
+                    <h1 class="project_title">This website</h1>
+                    <p>I've made this website as part of an assigment in school, and the code Exist on github</p>
+                    <a href="https://github.com/Secozzi/WU_projektVT_2C" target="_blank" class="project-btn this_website_btn">CODE ON GITHUB</a>
+                </div>
+            </div>
+
+        </div>
     </main>
-    
 
     <footer class="footer">
         <div class="footerMe">
@@ -50,8 +76,8 @@
             <h3 class="footerTitle">Links</h3>
             <section class="footerSecLinks">
                 <a href="index.html">Home</a>
-                <a href="#">About me</a>
-                <a href="projects.html">My projects</a>
+                <a href="about.html">About me</a>
+                <a href="#">My projects</a>
                 <a href="blog.html">My blog</a>
             </section>
         </div>

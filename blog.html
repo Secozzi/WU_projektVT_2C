@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/font_awesome.css">
     <link rel="stylesheet" href="css/bootStrap.css">
     <link rel="stylesheet" href="css/darkSlider.css">
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="css/main.css">
     <title>My Blog</title>
 </head>
+<script>window.onload=function(){toggleNightMode()}</script>
 <body>
-    <nav class="menu">
+    <nav class="menu white_b">
         <div class="title">
             <a href="#">Ishii.se</a>
         </div>
@@ -21,7 +23,7 @@
             <li class="mainLinks"><a href="index.html">Home</a></li>
             <li class="mainLinks"><a href="about.html">About</a></li>
             <li class="mainLinks"><a href="projects.html">Projects</a></li>
-            <li class="mainLinks"><a href="#my_blog">Blog</a></li>
+            <li class="mainLinks"><a href="#">Blog</a></li>
         </ul>
 
         <label class="nightModeSwitch">
@@ -39,7 +41,7 @@
     <script src="JS/script.js"></script>
 
     <main class="my_blog">
-        <div class="blog_nav"></div>
+        <div class="blog_nav nav_white_background"></div>
         <header class="blog_header">
             <h1 class="blog_header_title">My Blog</h1>
             <p class="blog_header_description">My projects and everyday thoughts are presented here</p>
@@ -51,11 +53,15 @@
 
                 <section class="blog_entry">
                     <div class="blog_entry_thumbnail">
-                        <img src="img/blog_entry_1.jpg" alt="Theodore_Roosevelt">
+                        <a class="" href="blog/creating_caspy.html">
+                            <img src="img/blog_entry_1.jpg" alt="Theodore_Roosevelt">
+                        </a>
                     </div>
 
                     <div class="blog_entry_content">
-                        <h1>Creating CASpy</h1>
+                        <a class="" href="blog/creating_caspy.html">
+                            <h1>Creating CASpy</h1>
+                        </a>
                         <p>This blog entry is going to be a mix between a tutorial and a blog entry, as I will explain what I did and provide code so you can use it yourself. </p>
                     </div>
 
@@ -67,11 +73,15 @@
 
                 <section class="blog_entry">
                     <div class="blog_entry_thumbnail">
-                        <img src="img/blog_entry_2.jpg" alt="Theodore_Roosevelt">
+                        <a class="" href="blog/creating_this_website.html">
+                            <img src="img/blog_entry_2.jpg" alt="Theodore_Roosevelt">
+                        </a>
                     </div>
 
                     <div class="blog_entry_content">
-                        <h1>Creating this website</h1>
+                        <a class="" href="blog/creating_caspy.html">
+                            <h1>Creating this website</h1>
+                        </a>
                         <p>In this blog post I will talk about my journey building this website, what I learned and what I can learn you, the reader, about creating a website thanks to my struggles.</p>
                     </div>
 
@@ -84,7 +94,7 @@
             </div>
 
             <aside class="blog_aside">
-                <img class="blog_aside_img" src="img/blog_about_me.jpg" alt="image_of_me">
+                <img class="blog_aside_img" src="img/blog_about_me.png" alt="image_of_me">
                 
                 <h1 class="blog_aside_tile">About me</h1>
                 
@@ -103,8 +113,8 @@
                 <h1 class="blog_aside_categories">Categories</h1>
 
                 <ul class="blog_aside_categories_list">
-                    <li><a class="" href="blog/tag/programming.html">Programming </a>(2)</li>
-                    <li><a class="" href="blog/tag/projects.html">Projects </a>(1)</li>
+                    <li><a class="" href="blog/tag/programming.html">Programming </a>(1)</li>
+                    <li><a class="" href="blog/tag/projects.html">Projects </a>(2)</li>
                 </ul>
             </aside>
         

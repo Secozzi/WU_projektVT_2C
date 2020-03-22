@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/font_awesome.css">
+    <link rel="stylesheet" href="../../css/bootStrap.css">
+    <link rel="stylesheet" href="../../css/darkSlider.css">
+    <link rel="stylesheet" href="../../css/burger.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>My Blog</title>
+</head>
+<script>window.onload=function(){toggleNightMode()}</script>
+<body>
+    <nav class="menu white_b">
+        <div class="title">
+            <a href="#">Ishii.se</a>
+        </div>
+        <ul class="mainMenu">
+            <li class="mainLinks"><a href="../../index.html">Home</a></li>
+            <li class="mainLinks"><a href="../../about.html">About</a></li>
+            <li class="mainLinks"><a href="../../projects.html">Projects</a></li>
+            <li class="mainLinks"><a href="../../blog.html">Blog</a></li>
+        </ul>
+
+        <label class="nightModeSwitch">
+            <input class="darkMode" type="checkbox" id="darkModeCheck" onclick="toggleNightMode()">
+            <span class="nightModeSlider round"></span>
+        </label>
+
+        <section class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </section>
+    </nav>
+
+    <script src="../../JS/script.js"></script>
+
+    <main class="my_blog">
+        <div class="blog_nav nav_white_background"></div>
+        <header class="blog_header">
+            <h1 class="blog_header_title">Tags / Programming</h1>
+            <p class="blog_header_description">My projects and everyday thoughts are presented here</p>
+        </header>
+        
+        <div class="blog_main">
+
+            <div class="blog_blogs">
+
+                <section class="blog_entry">
+                    <div class="blog_entry_thumbnail">
+                        <a class="" href="../creating_caspy.html">
+                            <img src="../../img/blog_entry_1.jpg" alt="Theodore_Roosevelt">
+                        </a>
+                    </div>
+
+                    <div class="blog_entry_content">
+                        <a class="" href="../creating_caspy.html">
+                            <h1>Creating CASpy</h1>
+                        </a>
+                        <p>This blog entry is going to be a mix between a tutorial and a blog entry, as I will explain what I did and provide code so you can use it yourself. </p>
+                    </div>
+
+                    <div class="blog_entry_info">
+                        <i class="material-icons">date_range</i><p>March 21, 2020</p>
+                        <i class="material-icons">folder_open</i><a href="programming.html">Programming</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <aside class="blog_aside">
+                <img class="blog_aside_img" src="../../img/blog_about_me.png" alt="image_of_me">
+                
+                <h1 class="blog_aside_tile">About me</h1>
+                
+                <p class="blog_aside_disc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quibusdam itaque, veniam, nobis eius asperiores ipsum omnis quidem corporis cupiditate hic excepturi obcaecati voluptatum doloribus voluptatem earum tenetur animi saepe!</p>
+                
+                <h1 class="blog_aside_follow">Follow me</h1>
+                
+                <ul class="blog_aside_links">
+                    <li><a href="https://github.com/Secozzi/" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank"><i class="fa fa-at"></i></a></li>
+                    <li><a href="https://www.instagram.com/folke_ishii/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/folke.ishii" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC155DYDprDljkvnLtFfJpyA?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+
+                <h1 class="blog_aside_categories">Categories</h1>
+
+                <ul class="blog_aside_categories_list">
+                    <li><a class="" href="programming.html">Programming </a>(1)</li>
+                    <li><a class="" href="projects.html">Projects </a>(2)</li>
+                </ul>
+            </aside>
+        
+        </div>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footerMe">
+            <h3 class="footerTitle">About me</h3>
+            <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
+        </div>
+        <div class="footerLinks footerPseudo footerPseudoL">
+            <h3 class="footerTitle">Links</h3>
+            <section class="footerSecLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../../about.html">About me</a>
+                <a href="../../projects.html">My projects</a>
+                <a href="../../blog.html">My blog</a>
+            </section>
+        </div>
+        <div class="footerContact footerPseudo">
+            <h3 class="footerTitle">Contact</h3>
+            <section class="footerSecContact">
+                <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
+                <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
+            </section>
+        </div>
+    </footer>
+    <footer class="footerCopyright">
+        <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+<script src="../../js/dark_mode.js"></script>
