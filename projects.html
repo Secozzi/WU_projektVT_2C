@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
     <title>My Projects</title>
 </head>
-<script>window.onload=function(){toggleNightMode()}</script>
 <body>
     <nav class="menu">
         <div class="title">
@@ -19,7 +18,7 @@
         <ul class="mainMenu">
             <li class="mainLinks"><a href="index.html">Home</a></li>
             <li class="mainLinks"><a href="about.html">About</a></li>
-            <li class="mainLinks"><a href="#">Projects</a></li>
+            <li class="mainLinks"><a href="#" onclick="toggleBurgerMenu()">Projects</a></li>
             <li class="mainLinks"><a href="blog.html">Blog</a></li>
         </ul>
 
@@ -35,36 +34,34 @@
         </section>
     </nav>
 
-    <script src="JS/script.js"></script>
-
     <main class="my_projects nav_white_background">
         <div class="nameTitleDiv">
             <h1 class="nameTitle" id="projects">My projects</h1>
         </div>
-        <img id="background" src="img/projects_background.png">
+        <img id="background" src="img/projects_background.jpg" alt="Background image">
 
-        <div class="projects_list">
-            <div class="caspy_project project_content">
-                <img id="project_background" src="img/CASpy.JPG">
+        <article class="projects_list">
+            <section class="caspy_project project_content">
+                <img id="project_background" src="img/CASpy.JPG" alt="Screnshot of CASpy">
                 <div class="project_text">
                     <h1 class="project_title">CASpy</h1>
                     <p>CASpy is bridge between PyQt5 and SymPy, making it a GUI calculator capable of doing calulus and more</p>
                     <a href="https://github.com/Secozzi/CASpy" target="_blank" class="project-btn">CODE ON GITHUB</a>
                 </div>
-            </div>
+            </section>
 
             <div class="projects_break"></div>
 
-            <div class="this_website_project project_content">
-                <img id="project_background" src="img/website.JPG">
+            <section class="this_website_project project_content">
+                <img id="project_background" src="img/website.JPG" alt="Screenshot of this website">
                 <div class="project_text this_website_text">
                     <h1 class="project_title">This website</h1>
                     <p>I've made this website as part of an assigment in school, and the code Exist on github</p>
                     <a href="https://github.com/Secozzi/WU_projektVT_2C" target="_blank" class="project-btn this_website_btn">CODE ON GITHUB</a>
                 </div>
-            </div>
+            </section>
 
-        </div>
+        </article>
     </main>
 
     <footer class="footer">
@@ -77,7 +74,7 @@
             <section class="footerSecLinks">
                 <a href="index.html">Home</a>
                 <a href="about.html">About me</a>
-                <a href="#">My projects</a>
+                <a href="#" onclick="toggleBurgerMenu()">My projects</a>
                 <a href="blog.html">My blog</a>
             </section>
         </div>
@@ -95,4 +92,5 @@
 </body>
 </html>
 
+<script src="js/script.js"></script>
 <script src="js/dark_mode.js"></script>

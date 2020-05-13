@@ -2,7 +2,13 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu')
 const mainMenu = document.querySelector('.mainMenu')
 
-window.onscroll = function() {navScroll()};
+window.onscroll = function() {navScroll(); disable_burger_menu()};
+
+function disable_burger_menu() {
+  if(hasClass(document.querySelector('.burger'), "toggle")) {
+    toggleBurgerMenu();
+  }
+}
 
 function navScroll() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -17,7 +23,7 @@ function navScroll() {
     }
 }
 
-function toggleBurgerMenu () {
+function toggleBurgerMenu() {
     mainMenu.classList.toggle('navActive');
     menu.classList.toggle('navActive');
     burger.classList.toggle('toggle');

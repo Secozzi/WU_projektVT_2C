@@ -1,3 +1,5 @@
+window.onload=function(){toggleNightMode()}
+
 const whiteText = document.querySelectorAll('.text-white');
 const color3 = document.querySelectorAll('.color-3');
 

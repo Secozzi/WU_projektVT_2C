@@ -1,0 +1,87 @@
+/* CSS för planering-table */
+table.planering {
+    border-collapse: collapse;
+}
+
+.planering td, .planering th {
+    padding: 5px;
+    text-align: left;
+}
+
+.planering th {
+    background-color: #212121;
+    color: #fff;
+}
+
+.planering tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* CSS för test-table */
+table.test, .test th, .test td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.test th, .test td {
+    padding: 5px;
+}
+
+/* CSS för allt annant såsom titlar och main */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    border-radius: 20px;
+    border: 2px solid #000;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+}
+
+#planering_img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h3 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h3:after, h3:before {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h3:before {
+    right: .5em;
+    margin-left: -50%;
+}
+
+h3:after {
+    left: .5em;
+    margin-right: -50%;
+}
+
+.footerCopyright {
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+.footerCopyright p {
+    margin-bottom: 0;
+}
