@@ -31,7 +31,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
 <!-- Länka till detta planeringsdokument i footern till din hemsida. -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
 
         <h3>2.1 Handskiss</h3>
         <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
-        <img src="Planering.png" alt="planering" id="planering_img">
+        <img src="Planering.png" alt="planering">
         Jag kommer använda mig till mestadels utav flexbox då det är väldigt bra att använda media queries med, men några element komer vara grids. Jag använde dock en grid för att göra footern för jag hade tänkt från början att den skulle vara lite mer komplex, men när jag skissade det så insåg jag att det var fult, så jag ändrade lite på footern. Det var från början en 2x3 grid men det blev istället 1x3 grid som jag lika gärna kunde ha gjort med flex box. Nästan allt är uppbyggd av antingen ingenting eller flexbox eftersom jag inte hade en så stor anledning att använda grids och att det är lättare att använda flex box. 
 
 
@@ -225,7 +225,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
 
             <tr>
                 <th>projetcts.html</th>
-                <th></th>
+                <th>X</th>
                 <th>X</th>
                 <th>X</th>
                 <th>X</th>
@@ -236,7 +236,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
             
             <tr>
                 <th>index.html</th>
-                <th></th>
+                <th>X</th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -323,7 +323,80 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
             </tr>
         </table>
 
-        Tankar kring testerna
+        <h4>Automatiska tester:</h4>
+        Sidan som användes:
+
+        <ul>
+            <li><a href="https://validator.w3.org/#validate_by_input">W3 Validator</a></li>
+        </ul>
+
+        <ul style="list-style-type: none;">
+            <li>
+                <p>projects.html</p>
+                <img src="automatiska_tester/projectshtml.JPG" alt="Automatiskt test av projects.html">
+            </li>
+        
+            <li>
+                <p>index.html</p>
+                <img src="automatiska_tester/indexhtml.JPG" alt="Automatiskt test av index.html">
+            </li>
+        
+            <li>
+                <p>blog.html</p>
+                <img src="automatiska_tester/bloghtml.JPG" alt="Automatiskt test av blog.html">
+            </li>
+        
+            <li>
+                <p>about.html</p>
+                <img src="automatiska_tester/abouthtml.JPG" alt="Automatiskt test av about.html">
+            </li>
+        
+            <li>
+                <p>planering</p>
+                <img src="automatiska_tester/planeringhtml.JPG" alt="Automatiskt test av planering.html">
+            </li>
+        
+            <li>
+                <p>creating_this_website.html</p>
+                <img src="automatiska_tester/creatingthiswebsitehtml.JPG" alt="Automatiskt test av creating_this_website.html">
+            </li>
+        
+            <li>
+                <p>creating_caspy.html <br> Den sade att dokumenten inte skulle vara på engelska utan latin eller något. Jag använder dock inte latin, utan jag skulle skriva hemsidan på engelska så jag tänker ignorera denna varning. </p>
+                <img src="automatiska_tester/creatingcaspyhtml.JPG" alt="Automatiskt test av planering.html">
+            </li>
+        
+            <li>
+                <p>tag/projects.html</p>
+                <img src="automatiska_tester/tagprojectshtml.JPG" alt="Automatiskt test av tag/projects.html">
+            </li>
+        
+            <li>
+                <p>tag/programming.html</p>
+                <img src="automatiska_tester/programminghtml.JPG" alt="Automatiskt test av tag/programming.html">
+            </li>
+        
+            <li>
+                <p>main.css</p>
+                <img src="automatiska_tester/maincss.JPG" alt="Automatiskt test av main.css">
+            </li>
+        
+            <li>
+                <p>darkSlider.css</p>
+                <img src="automatiska_tester/darkslidercss.JPG" alt="Automatiskt test av darkSlider.css">
+            </li>
+        
+            <li>
+                <p>burger.css</p>
+                <img src="automatiska_tester/burgercss.JPG" alt="Automatiskt test av burger.css">
+            </li>
+        
+            <li>
+                <p>font_awesome.css och bootStrap.css är inte skrivet av mig så det finns inga automatiska tester att göra</p>
+            </li>
+        </ul>
+
+        <h4>Tankar kring testerna</h4>
         <ul>
             <li>*: När man klickar på länken som för dig till samma dokument, ska href i a-taggen vara '#'</li>
             <li>**: Enheten med minsta storlek kommer vara iPhone 4, med 320px bredd och 480px jöjd enligt webläsaren.</li>

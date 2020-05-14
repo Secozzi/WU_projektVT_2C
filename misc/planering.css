@@ -42,7 +42,7 @@ main {
     padding: 20px;
 }
 
-#planering_img {
+img {
     display: block;
     margin: 0 auto;
     max-width: 100%;

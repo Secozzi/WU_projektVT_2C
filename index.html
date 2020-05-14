@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Folke Ishii</title>
+
+    <!-- defer means it will load last-->
+    <script src="js/script.js" defer></script>
+    <script src="js/dark_mode.js" defer></script>
 </head>
 <body>
     <nav class="menu">
-        <section class="title">
-            <a href="#">Ishii.se</a>
+        <section class="title" aria-label="Title of website">
+            <a href="#" onclick="disable_burger_menu()">Ishii.se</a>
         </section>
         <ul class="mainMenu">
-            <li class="mainLinks"><a href="#">Home</a></li>
-            <li class="mainLinks"><a href="#about">About</a></li>
-            <li class="mainLinks"><a href="#code">Projects</a></li>
-            <li class="mainLinks"><a href="#blog">Blog</a></li>
+            <li class="mainLinks"><a href="#" onclick="disable_burger_menu()">Home</a></li>
+            <li class="mainLinks"><a href="#about" onclick="disable_burger_menu()">About</a></li>
+            <li class="mainLinks"><a href="#code" onclick="disable_burger_menu()">Projects</a></li>
+            <li class="mainLinks"><a href="#blog" onclick="disable_burger_menu()">Blog</a></li>
         </ul>
 
         <label class="nightModeSwitch">
@@ -28,7 +32,7 @@
             <span class="nightModeSlider round"></span>
         </label>
 
-        <section class="burger">
+        <section class="burger" aria-label="Burger menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -36,30 +40,28 @@
     </nav>
 
     <main class="mainBody">
-        <div class="nameTitleDiv">
+        <section class="nameTitleDiv" aria-label="Section with info about me and how to contact me">
             <h1 class="nameTitle">Hi, I'm Folke Ishii</h1>
             <p class="nameTitleDisc">I am a student at NTI-Johanneberg that likes to code</p>
             <div class="title-btn-box">
                 <a href="projects.html" class="title-btn">MY WORK</a>
                 <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank" class="title-btn">CONTACT ME</a>
             </div> 
-        </div>
+        </section>
         <img id="background" src="img/background.jpg" alt="background">
 
-
-        <div class="mainPart">
+        <section class="mainPart" aria-label="Here are all the sections to the different sub-websites">
             <!-- I have to use div tags here because bootstrap, the css framework I use, requires me to -->
-            <div id="about">
+            <article id="about" aria-label="Section about me">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
                             <div class="about-img">
-                                <img class="img-responsive man aboutImg" src="img/aboutMe.jpg" alt="">
+                                <img class="img-responsive man aboutImg" src="img/aboutMe.jpg" alt="An image of me">
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-7 about-right">
-
+                        <section class="col-md-7 about-right">
                             <h2 class="color-3">About Me</h2>
                             <p class="p-first text-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil autem dolores amet ad optio aperiam laboriosam architecto pariatur recusandae, dolor in est excepturi non mollitia omnis dignissimos atque ex.
@@ -78,16 +80,15 @@
                                 <li><a href="https://www.facebook.com/folke.ishii" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://www.youtube.com/channel/UC155DYDprDljkvnLtFfJpyA?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                             </ul>
-
-                        </div>
+                        </section>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div id="code">
+            <article id="code" aria-label="Section about my projects">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <section class="col-md-5">
                             <h2 class="color-3-perm">I am a programmer</h2>
 
                             <p class="p-first perm-white">
@@ -99,27 +100,27 @@
                             </p>
 
                             <a class="social-link-text" href="projects.html">Learn more</a>
-                        </div>
+                        </section>
                         <br>
-                        <div class="col-md-7 about-right">
+                        <section class="col-md-7 about-right" aria-label="Image of me">
                             <div class="about-img">
-                                <img class="img-responsive man" src="img/aboutMe.jpg" alt="">
+                                <img class="img-responsive man" src="img/aboutMe.jpg" alt="An image of me">
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div id="blog">
+            <article id="blog" aria-label="Section about my blog">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <section class="col-md-5" aria-label="Image of me">
                             <div class="about-img">
-                                <img class="img-responsive man" src="img/aboutMe.jpg" alt="">
+                                <img class="img-responsive man" src="img/aboutMe.jpg" alt="An image of me">
                             </div>
-                        </div>
+                        </section>
                         <br>
-                        <div class="col-md-7 about-right">
+                        <section class="col-md-7 about-right">
                             <h2 class="color-3">I also have a blog</h2>
 
                             <p class="p-first text-white">
@@ -131,47 +132,43 @@
                             </p>
 
                             <a class="social-link-text" href="blog.html">Learn more</a>
-                        </div>
+                        </section>
                     </div>
                 </div>
-            </div>        
+            </article>        
             
 
-        </div>
+        </section>
     </main>
 
     
     <footer class="footer">
-        <div class="footerMe">
+        <section class="footerMe">
             <h3 class="footerTitle">About me</h3>
             <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
-        </div>
-        <div class="footerLinks footerPseudo footerPseudoL">
+        </section>
+        <section class="footerLinks footerPseudo footerPseudoL">
             <h3 class="footerTitle">Links</h3>
-            <section class="footerSecLinks">
-                <a href="#">Home</a>
+            <div class="footerSecLinks">
+                <a href="#" onclick="disable_burger_menu()">Home</a>
                 <a href="about.html">About me</a>
                 <a href="projects.html">My projects</a>
                 <a href="blog.html">My blog</a>
-            </section>
-        </div>
-        <div class="footerContact footerPseudo">
+            </div>
+        </section>
+        <section class="footerContact footerPseudo">
             <h3 class="footerTitle">Contact</h3>
-            <section class="footerSecContact">
+            <div class="footerSecContact">
                 <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
                 <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
     <footer class="footerCopyright">
         <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
-
-<script src="js/script.js"></script>
-<script src="js/dark_mode.js"></script>
 
 <!--    
         _

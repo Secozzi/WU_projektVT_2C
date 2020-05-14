@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="css/main.css">
     <title>My Projects</title>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/dark_mode.js" defer></script>
 </head>
 <body>
     <nav class="menu">
         <div class="title">
-            <a href="#">Ishii.se</a>
+            <a href="#" onclick="disable_burger_menu()">Ishii.se</a>
         </div>
         <ul class="mainMenu">
             <li class="mainLinks"><a href="index.html">Home</a></li>
             <li class="mainLinks"><a href="about.html">About</a></li>
-            <li class="mainLinks"><a href="#" onclick="toggleBurgerMenu()">Projects</a></li>
+            <li class="mainLinks"><a href="#" onclick="disable_burger_menu()">Projects</a></li>
             <li class="mainLinks"><a href="blog.html">Blog</a></li>
         </ul>
 
@@ -27,7 +30,7 @@
             <span class="nightModeSlider round"></span>
         </label>
 
-        <section class="burger">
+        <section class="burger" aria-label="Burger menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -40,11 +43,11 @@
         </div>
         <img id="background" src="img/projects_background.jpg" alt="Background image">
 
-        <article class="projects_list">
-            <section class="caspy_project project_content">
-                <img id="project_background" src="img/CASpy.JPG" alt="Screnshot of CASpy">
+        <article class="projects_list" aria-label="List my projects">
+            <section class="caspy_project project_content" aria-label="CASpy, one of my projects">
+                <img class="project_background" src="img/CASpy.JPG" alt="Screnshot of CASpy">
                 <div class="project_text">
-                    <h1 class="project_title">CASpy</h1>
+                    <h2 class="project_title">CASpy</h2>
                     <p>CASpy is bridge between PyQt5 and SymPy, making it a GUI calculator capable of doing calulus and more</p>
                     <a href="https://github.com/Secozzi/CASpy" target="_blank" class="project-btn">CODE ON GITHUB</a>
                 </div>
@@ -52,10 +55,10 @@
 
             <div class="projects_break"></div>
 
-            <section class="this_website_project project_content">
-                <img id="project_background" src="img/website.JPG" alt="Screenshot of this website">
+            <section class="this_website_project project_content" aria-label="Another one of my projects, this website">
+                <img class="project_background" src="img/website.JPG" alt="Screenshot of this website">
                 <div class="project_text this_website_text">
-                    <h1 class="project_title">This website</h1>
+                    <h2 class="project_title">This website</h2>
                     <p>I've made this website as part of an assigment in school, and the code Exist on github</p>
                     <a href="https://github.com/Secozzi/WU_projektVT_2C" target="_blank" class="project-btn this_website_btn">CODE ON GITHUB</a>
                 </div>
@@ -65,32 +68,29 @@
     </main>
 
     <footer class="footer">
-        <div class="footerMe">
+        <section class="footerMe">
             <h3 class="footerTitle">About me</h3>
             <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
-        </div>
-        <div class="footerLinks footerPseudo footerPseudoL">
+        </section>
+        <section class="footerLinks footerPseudo footerPseudoL">
             <h3 class="footerTitle">Links</h3>
-            <section class="footerSecLinks">
+            <div class="footerSecLinks">
                 <a href="index.html">Home</a>
                 <a href="about.html">About me</a>
-                <a href="#" onclick="toggleBurgerMenu()">My projects</a>
+                <a href="#" onclick="disable_burger_menu()">My projects</a>
                 <a href="blog.html">My blog</a>
-            </section>
-        </div>
-        <div class="footerContact footerPseudo">
+            </div>
+        </section>
+        <section class="footerContact footerPseudo">
             <h3 class="footerTitle">Contact</h3>
-            <section class="footerSecContact">
+            <div class="footerSecContact">
                 <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
                 <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
     <footer class="footerCopyright">
         <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
     </footer>
 </body>
 </html>
-
-<script src="js/script.js"></script>
-<script src="js/dark_mode.js"></script>

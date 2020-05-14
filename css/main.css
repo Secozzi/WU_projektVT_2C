@@ -776,7 +776,7 @@ nav {
 }
 
 /* Projects website */
-#project_background {
+.project_background {
     width: 100%;
     -webkit-filter: blur(3px);
     filter: blur(3px);

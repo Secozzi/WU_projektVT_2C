@@ -2,31 +2,31 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu')
 const mainMenu = document.querySelector('.mainMenu')
 
-window.onscroll = function() {navScroll(); disable_burger_menu()};
+window.onscroll = function() {navScroll()};
 
 function disable_burger_menu() {
-  if(hasClass(document.querySelector('.burger'), "toggle")) {
+  if (mainMenu.classList.contains('navActive')) {
     toggleBurgerMenu();
   }
 }
 
 function navScroll() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    console.log(winScroll);
-    if (winScroll > 50) {
-        menu.classList.add("scrollD")
-        mainMenu.classList.add("scrollD")
-    } else {
-        menu.classList.remove("scrollD")
-        mainMenu.classList.remove("scrollD")
-    }
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  console.log(winScroll);
+  if (winScroll > 50) {
+      menu.classList.add("scrollD")
+      mainMenu.classList.add("scrollD")
+  } else {
+      menu.classList.remove("scrollD")
+      mainMenu.classList.remove("scrollD")
+  }
 }
 
 function toggleBurgerMenu() {
-    mainMenu.classList.toggle('navActive');
-    menu.classList.toggle('navActive');
-    burger.classList.toggle('toggle');
+  mainMenu.classList.toggle('navActive');
+  menu.classList.toggle('navActive');
+  burger.classList.toggle('toggle');
 }
 
 let resizeTimer;

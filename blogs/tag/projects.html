@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../../css/burger.css">
     <link rel="stylesheet" href="../../css/main.css">
     <title>My Blog</title>
+
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/dark_mode.js" defer></script>
 </head>
 <body>
     <nav class="menu white_b">
@@ -30,7 +33,7 @@
             <span class="nightModeSlider round"></span>
         </label>
 
-        <section class="burger">
+        <section class="burger" aria-label="Burger menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -40,7 +43,7 @@
     <main class="my_blog">
         <div class="blog_nav nav_white_background"></div>
         <header class="blog_header">
-            <h1 class="blog_header_title">Tags / Programming</h1>
+            <h1 class="blog_header_title">Tags / Projects</h1>
             <p class="blog_header_description">My projects and everyday thoughts are presented here</p>
         </header>
         
@@ -57,7 +60,7 @@
 
                     <div class="blog_entry_content">
                         <a class="" href="../creating_caspy.html">
-                            <h1>Creating CASpy</h1>
+                            <h2>Creating CASpy</h2>
                         </a>
                         <p>This blog entry is going to be a mix between a tutorial and a blog entry, as I will explain what I did and provide code so you can use it yourself. </p>
                     </div>
@@ -68,16 +71,36 @@
                     </div>
                 </section>
 
+                <section class="blog_entry">
+                    <div class="blog_entry_thumbnail">
+                        <a class="" href="../creating_this_website.html">
+                            <img src="../../img/blog_entry_2.jpg" alt="Theodore_Roosevelt">
+                        </a>
+                    </div>
+
+                    <div class="blog_entry_content">
+                        <a class="" href="../creating_this_website.html">
+                            <h2>Creating this website</h2>
+                        </a>
+                        <p>In this blog post I will talk about my journey building this website, what I learned and what I can learn you, the reader, about creating a website thanks to my struggles.</p>
+                    </div>
+
+                    <div class="blog_entry_info">
+                        <i class="material-icons">date_range</i><p>March 21, 2020</p>
+                        <i class="material-icons">folder_open</i><a href="#">Projects</a>
+                    </div>
+                </section>
+
             </div>
 
             <aside class="blog_aside">
                 <img class="blog_aside_img" src="../../img/blog_about_me.png" alt="image_of_me">
                 
-                <h1 class="blog_aside_tile">About me</h1>
+                <h2 class="blog_aside_tile">About me</h2>
                 
                 <p class="blog_aside_disc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quibusdam itaque, veniam, nobis eius asperiores ipsum omnis quidem corporis cupiditate hic excepturi obcaecati voluptatum doloribus voluptatem earum tenetur animi saepe!</p>
                 
-                <h1 class="blog_aside_follow">Follow me</h1>
+                <h2 class="blog_aside_follow">Follow me</h2>
                 
                 <ul class="blog_aside_links">
                     <li><a href="https://github.com/Secozzi/" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -87,7 +110,7 @@
                     <li><a href="https://www.youtube.com/channel/UC155DYDprDljkvnLtFfJpyA?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                 </ul>
 
-                <h1 class="blog_aside_categories">Categories</h1>
+                <h2 class="blog_aside_categories">Categories</h2>
 
                 <ul class="blog_aside_categories_list">
                     <li><a class="" href="programming.html">Programming </a>(1)</li>
@@ -100,32 +123,29 @@
     
 
     <footer class="footer">
-        <div class="footerMe">
+        <section class="footerMe">
             <h3 class="footerTitle">About me</h3>
             <p class="footerMeDisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil maxime vel dolore dicta corrupti aliquid sequi fugiat commodi iste? Ipsum, ad. Obcaecati incidunt velit non tempora debitis beatae hic?</p>
-        </div>
-        <div class="footerLinks footerPseudo footerPseudoL">
+        </section>
+        <section class="footerLinks footerPseudo footerPseudoL">
             <h3 class="footerTitle">Links</h3>
-            <section class="footerSecLinks">
+            <div class="footerSecLinks">
                 <a href="../../index.html">Home</a>
                 <a href="../../about.html">About me</a>
                 <a href="../../projects.html">My projects</a>
                 <a href="../../blog.html">My blog</a>
-            </section>
-        </div>
-        <div class="footerContact footerPseudo">
+            </div>
+        </section>
+        <section class="footerContact footerPseudo">
             <h3 class="footerTitle">Contact</h3>
-            <section class="footerSecContact">
+            <div class="footerSecContact">
                 <a href="mailto:folke.ishii@gmail.com?subject=Contact" target="_blank">folke.ishii@gmail.com</a>
                 <a href="tel:+46736758270" target="_blank">+46 73-675 82 70</a>    
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
     <footer class="footerCopyright">
         <p>Copyright © 2020 Ishii.se | All Rights Reserved</p>
     </footer>
 </body>
 </html>
-
-<script src="../../js/script.js"></script>
-<script src="../../js/dark_mode.js"></script>
