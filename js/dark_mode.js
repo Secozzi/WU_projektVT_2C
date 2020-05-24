@@ -81,6 +81,7 @@ function toggleNightMode() {
         document.querySelector("body").classList.add("mainPartdm"),
         document.querySelector(".footerCopyright").classList.add("copyrightdm"),
         document.querySelector(".footer").classList.add("footerdm"),
+        burger.classList.add("burgerdm"),
         doWhiteText(),
         unique_selectors_dark_mode()
     ) 
@@ -89,6 +90,7 @@ function toggleNightMode() {
         document.querySelector("body").classList.remove("mainPartdm"),
         document.querySelector(".footerCopyright").classList.remove("copyrightdm"),
         document.querySelector(".footer").classList.remove("footerdm"),
+        burger.classList.remove("burgerdm"),
         doBlackText(),
         unique_selectors_light_mode()
     )

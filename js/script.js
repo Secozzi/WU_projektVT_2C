@@ -17,9 +17,11 @@ function navScroll() {
   if (winScroll > 50) {
       menu.classList.add("scrollD")
       mainMenu.classList.add("scrollD")
+      burger.classList.add("scrollD")
   } else {
       menu.classList.remove("scrollD")
       mainMenu.classList.remove("scrollD")
+      burger.classList.remove("scrollD")
   }
 }
 

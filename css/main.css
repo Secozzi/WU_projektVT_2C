@@ -571,6 +571,12 @@ nav {
     margin-right: 15px;
 }
 
+@media screen and (max-width: 350px) {
+    .blog_entry_info {
+        margin-left: 5px;
+    }
+}
+
 .blog_entry_info a {
     color: black;
 }
@@ -661,6 +667,11 @@ nav {
 /* Blog entry */
 .blog_post_main {
     background-color: rgb(245,245,245);
+}
+
+.blog_post_title {
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .my_blog_dm {

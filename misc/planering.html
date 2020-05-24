@@ -154,6 +154,56 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
                 </td>
             </tr>
 
+            <tr>          
+                <td>17</td>
+                <td>
+                Kolla igenom koden och avgöra vad som behövs fixas
+                </td>
+                <td>
+                Kolla på bedömningen och se vad som jag ska lägga tid på
+                </td>
+            </tr>
+
+            <tr>          
+                <td>18</td>
+                <td>
+                Ändra på dark-mode och hur den implementerades
+                </td>
+                <td>
+                Börja fixa enligt bedömningen
+                </td>
+            </tr>
+
+            <tr>          
+                <td>19</td>
+                <td>
+                Börja med manuella tester och automatiska tester
+                </td>
+                <td>
+                Fortsätta med manuella tester och automatiska tester
+                </td>
+            </tr>
+
+            <tr>          
+                <td>20</td>
+                <td>
+                Fortsätta med manuella tester och automatiska tester
+                </td>
+                <td>
+                Fortsätta med manuella tester och automatiska tester
+                </td>
+            </tr>
+
+            <tr>          
+                <td>21</td>
+                <td>
+                Skriva på dokumentationen
+                </td>
+                <td>
+                Fixa till saker om det finns något kvar att göra, typ dokumentation
+                </td>
+            </tr>
+
         </table>
 
 
@@ -200,16 +250,24 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
         Denna lektion lekte jag runt i ett annat html-dokument på en redisgn av navbaren. Jag tänkte mig en navbar som alltid är vit i light-mode och alltid mörk i dark-mode. Jag tänkte också göra om hamburgarmenyn, men när jag insåg hur jobbigt det skulle vara, bestämde jag mig för att fokusera på de delar som faktisk höjer mitt betyg. Detta gick dock ganska snabbt eftersom de misstag som jag gjorde var ganska små och inte så många. Tills nästa gång ska jag nog börja med att fixa de mest kritiska problem innan jag tänker på att göra allt snyggare, då jag 'slösade' mycket med att försöka ändra på navbaren. Jag lärde mig dock mycket genom att försöka ändra på navbaren som jag kunde ändra på på andra ställen. 
 
         <h3>Lektion vecka 18</h3>
-        Den här lektionen så tänkte jag kolla igenom all kod och ändra på saker, nu när jag har lärt mig mer. Jag märkte ganska många så misstag, som till exempel att jag inte använde mig utav css-variabler när jag skulle ändra på färgen i light- och dark-mode. Jag hade inte tänkt att ändra på koden den här lektionen, och det gjorde jag inte heller. En liten del av denna lektion tillbringades genom att titta på tips och tricks på internet om hur man skriver bättre css och snygga tricks såsom css-variabler. Detta gjorde jag eftersom jag ville veta vad som behövdes fixas och sedan exakt hur jag ska sfixa min kod. Dock så tog lektionen slut ganska snabbt och jag hann inte klart, och blev tvungen att bryta loss från schemat och fortsätta att kolla på css till nästa lektion, då jag hade tänkt att jag faktiskt skulle ändra på koden. Tills nästa gång ska jag nog börja med att kolla igenom koden innan jag gör ett schema så jag kan bättre gissa hur lång tid det tar att fixa koden.
+        Den här lektionen så tänkte jag kolla igenom all kod och ändra på saker, nu när jag har lärt mig mer. Jag märkte ganska många så misstag, som till exempel att jag inte använde mig utav css-variabler när jag skulle ändra på färgen i light- och dark-mode. Jag blev heller inte nöjd med hur jag implementerade dark-mode då javascripten inte är så snygg. Det är ju trots allt första gången jag använda javascript. Mina javascript-filer blev en stor hög av spaghetti kod och jag skulle vilja ändra på det. Jag hade inte tänkt att ändra på koden den här lektionen, och det gjorde jag inte heller. En liten del av denna lektion tillbringades genom att titta på tips och tricks på internet om hur man skriver bättre css och snygga tricks såsom css-variabler. 
+        Detta gjorde jag eftersom jag ville veta vad som behövdes fixas och sedan exakt hur jag ska fixa min kod. Dock så tog lektionen slut ganska snabbt och jag hann inte klart, och blev tvungen att bryta loss från schemat och fortsätta att kolla på css till nästa lektion, då jag hade tänkt att jag faktiskt skulle ändra på koden. Tills nästa gång ska jag nog börja med att kolla igenom koden innan jag gör ett schema så jag kan bättre gissa hur lång tid det tar att fixa koden.
 
         <h3>Lektion vecka 19</h3>
+        Jag hade tänkt att ändra på koden, men jag vill bli klar med testerna först. När jag märkte hur lång tid testerna kommer ta så kommer jag nog arbeta med testerna resten utav tiden. Den största delen av lektionen gick åt för att skapa en tabell för manuella tester och börja testa. När jag gjorde behövde jag tänka på vad som behövde fixas enligt bedömingen, som till exempel att jag behövde semantiska taggar och att alla bilder behövde alt-taggar. Sedan tänkte jag på saker som gjorde så att hemsidan fungerade korrekt, såsom 'korrekt länkade' och att 'dark-mode fungerar'. När jag har kommit på alla tester och hade gjort klart tabellen började jag med de automatiska testerna. Jag tyckte det var väldigt smart för de visade att alla &lt;section&gt; behövde en titel eller en 'aria-label'. Detta var viktig information eftersom jag behövde tänka på det här när jag gjorde om &lt;div&gt; till &lt;section&gt; eller &lt;article&gt;. Eftersom validatorn blev arg när jag inte hade alt taggar blev det manuella testet där jag kollade efter alt-taggar onödigt. Jag fixade så att alla html-sidor klarade av html-validatorn innan jag började med de manuella testerna. Alla CSS-dokument passerade validatorn.
+
+        <h3>Lektion vecka 20</h3>
+        Under den här lektionen gjorde jag alla automatiska tester och fixade alla problem. Jag kommer också göra automatiska tester när mina manuella tester är klara och fixa alla problem. Jag lade även in bilder på testerna i detta planeringsdokument. Jag hann även göra lite på de manuella testerna också. De manuella testerna var väldigt tråkiga att genomföra eftersom det var väldigt repetitivt. Eftersom jag hade kopierat navbaren och footern (de är nästan exakt likadana i alla dokument) behövde jag fixa problemen med dem på alla hemsidor. Lyckligtvis så kunde jag fixa och kopiera det mesta, men inte allt. Att fixa samma sak i åtta hemsidor var väldigt tråkigt. Jag lärde mig dock något nyttigt av det här. Tills nästa gång då jag gör något som jag vet kommer att återanvändas och kopieras så kommer jag kolla igenom koden med validator och manuella tester innan jag kopierer koden. Det kommer spara mycket med tid och arbete. Sedan blev jag tvungen att testa i olika webläsare. Eftersom jag verkligen inte vill gå igenom alla manuella tester för alla hemsidor i alla webläsare kommer jag kolla att index.html och blog.html fungerar och anta att alla andra sidor också kommer att fungera eftersom koden (css och javascript) kommer vara likadan. Dessa två hemsidor täcker också allt som behövs täckas så som en vit nav-bar, responsivitet och korrekt länkning. Många testerna behöver inte testas, så som semantiska taggar och alt-taggar eftersom dem påverkas inte av vilken webläsare som används. Jag kommer testa chrome (dator), microsoft edge, firefox och chrome (mobil). För att test på mobil lade jag upp hemsidan på ishii.se/experimental 
+
+        <h3>Lektion vecka 21</h3>
+        Med de manuella och automatiska testerna klara skrev jag klart dokumentationen. Jag beskrev lite mer vad jag gjorde och hur jag gjorde det, istället för 'jag fixade lite här och där'. Det finns inte så mycket att säga men det gick bra att skriva på dokumentationen och det ända som jag ska tänka på tilss nästa gång är att beskriva mer utförligt. Med tanke på att jag har slutprov i andra ämnen så kommer jag inte lägga ner tid på att fixa dark-mode, så som jag sa i början. 
 
         <!-- Här skriver du efter varje lektion. Vad har jag gjort? Vad gick bra? Vad gick mindre bra? Vad ska jag tänka på till nästa gång? -->
         <h2>4. Testning (gammal)</h2>
         jag testade i Microsoft Edge, Chromium (mobil och desktop) och Firefox. Jag stötte inte på några problem och det var samma i alla browsers och allt funkade på mobil. Sen har jag ju många sidor så jag kan ha missat något.
 
         <h2>4. Testning (ny)</h2>
-        Manuella tester:
+        Manuella tester: (Firefox)
 
         <table class="test" style="margin: 0 auto;">
             <tr>
@@ -237,78 +295,89 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
             <tr>
                 <th>index.html</th>
                 <th>X</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>blog.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>about.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>creating_this_website.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>Typ - se tankar</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>creating_caspy.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>Typ - se tankar</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+            </tr>
+
+            <tr>
+                <th>photoshop.html</th>
+                <th>X</th>
+                <th>Typ - se tankar</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>tag/projects.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
                 <th>tag/programming.html</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
             </tr>
             
             <tr>
@@ -337,7 +406,7 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
             </li>
         
             <li>
-                <p>index.html</p>
+                <p>index.html <br> Den sade att dokumenten inte skulle vara på engelska utan latin eller något. Jag använder dock inte latin, utan jag skulle skriva hemsidan på engelska så jag tänker ignorera denna varning. </p>
                 <img src="automatiska_tester/indexhtml.JPG" alt="Automatiskt test av index.html">
             </li>
         
@@ -363,7 +432,12 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
         
             <li>
                 <p>creating_caspy.html <br> Den sade att dokumenten inte skulle vara på engelska utan latin eller något. Jag använder dock inte latin, utan jag skulle skriva hemsidan på engelska så jag tänker ignorera denna varning. </p>
-                <img src="automatiska_tester/creatingcaspyhtml.JPG" alt="Automatiskt test av planering.html">
+                <img src="automatiska_tester/creatingcaspyhtml.JPG" alt="Automatiskt test av creatingcaspy.html">
+            </li>
+
+            <li>
+                <p>photoshop.html <br> Den sade att dokumenten inte skulle vara på engelska utan latin eller något. Jag använder dock inte latin, utan jag skulle skriva hemsidan på engelska så jag tänker ignorera denna varning. </p>
+                <img src="automatiska_tester/photoshophtml.JPG" alt="Automatiskt test av photoshop.html">
             </li>
         
             <li>
@@ -396,12 +470,20 @@ Folke Ishii fixed documentation 0a495c4 7 days ago
             </li>
         </ul>
 
+        <h4>Tester för olika webläsare</h4>
+        <table class="test" style="margin: 0 auto;">
+
+        </table>
+
+
         <h4>Tankar kring testerna</h4>
         <ul>
-            <li>*: När man klickar på länken som för dig till samma dokument, ska href i a-taggen vara '#'</li>
-            <li>**: Enheten med minsta storlek kommer vara iPhone 4, med 320px bredd och 480px jöjd enligt webläsaren.</li>
-            <li>Allmänt: Responsivitetet fungerar ner tills 315px bredd, men eftersom den minsta enheten som jag tänker supporta är iPhone 4, med 320px bredd så funkar detta. Det kommer nog vara så här på andra hemsidor också </li>
-            <li>projects.html: Responsivitetet fungerar ner tills 315px bredd, men eftersom den minsta enheten som jag tänker supporta är iPhone 4, med 320px bredd så funkar detta. Det kommer nog vara så här på andra hemsidor också </li>
+            <li>*: När man klickar på länken som för dig till samma dokument som man är i, ska href i a-taggen vara '#'</li>
+            <li>**: Enheten med minsta storlek kommer vara iPhone 4, med 320px bredd och 480px höjd enligt webläsaren.</li>
+            <li>Allmänt: Responsivitetet fungerar ner tills 315px bredd, men eftersom den minsta enheten som jag tänker supporta är iPhone 4, med 320px bredd så funkar detta. </li>
+            <li>creating_this_website.html: 'Share' länkarna kommer bara att fungera när hemsidan är uppe på ishii.se</li>
+            <li>creating_caspy.html: 'Share' länkarna kommer bara att fungera när hemsidan är uppe på ishii.se</li>
+            <li>photoshop.html: 'Share' länkarna kommer bara att fungera när hemsidan är uppe på ishii.se</li>
         </ul>
 
         <h2>5. Utvärdering</h2>

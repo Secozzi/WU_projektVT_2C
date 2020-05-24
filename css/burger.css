@@ -10,7 +10,7 @@
 }
 
 /* Styling if navbar should be white */
-.white_b.menu:not(.scrollD) a {
+.white_b.menu:not(.scrollD):not(.navActive) a {
     color: #3f3f3f !important;
 }
 
@@ -137,6 +137,11 @@
         height: 3px;
         margin: 5px;
         margin-right: 50px;
+    }
+
+    /* So the lines have the right colour */
+    .burger.burger_white:not(.scrollD):not(.burgerdm):not(.toggle) div {
+        background-color: black;
     }
 
     .toggle .line1 {transform: rotate(-45deg) translate(-5px, 6px);}
