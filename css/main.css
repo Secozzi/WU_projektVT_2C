@@ -869,3 +869,229 @@ nav {
     -webkit-filter: blur(3px);
     filter: blur(3px);
 }
+
+
+
+
+/* BURGER ------------------------------------------ */
+
+/* animate styling 'menu' */
+.menu {
+    transition: background-color 0.3s;
+}
+
+/* Style menu when not scrolled down */
+.menu:not(.scrollD) {
+    margin-top: 10px;
+    background-color: rgba(100,100,100,0);
+}
+
+/* Styling if navbar should be white */
+.white_b.menu:not(.scrollD):not(.navActive) a {
+    color: #3f3f3f !important;
+}
+
+.white_b.menu.white_b_dm:not(.scrollD) a {
+    color: white !important;
+}
+
+.white_b.menu:not(.scrollD):not(.scroll_dm) span {
+    box-shadow: 0px 0px 8px 2px #7f7f7f;
+}
+
+.nav_white_background.nav_background_dm {
+    background-color: #1F1F1F;
+}
+
+/* Style div that holds links */
+.mainMenu {
+    font-family: "Quicksand", sans-serif;
+    transition-delay: 2s;
+    table-layout: fixed;
+    align-items: center;
+    position: absolute;
+    display: table;
+    height: calc(100vh - 40px);
+    right: -40%;
+    width: 40%;
+    top: 40px;    
+}
+
+/* Style the links */
+.mainMenu a {
+    border-left: 10px solid transparent;
+    vertical-align: middle;
+    display: table-cell;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    .mainMenu {
+        right: -100%;
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 750px) {
+    /* Line up links in a flexbox */
+    .mainMenu {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 500px;
+        right: 100px;
+        top: 0;    
+    }
+
+    /* Hovering links */
+    .mainMenu a:hover::after {
+        transition: all 0.3s;
+        content: "";
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        bottom: 0px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    /* Links and only links */
+    .mainMenu > .mainLinks {
+        position: relative;
+        list-style: none;
+    }
+}
+
+/* Smaller screen */
+@media screen and (max-width: 749px) {
+    .mainMenu {
+        transition: all 0.3s;
+    }
+
+    /* Line up items like a burger menu */
+    .mainMenu > .mainLinks{
+        position: relative;
+        text-align: center;
+        display: table-row;
+        list-style: none;
+    }
+
+    /* Hovering links */
+    .mainMenu > .mainLinks :hover {
+        border-left: 10px solid white;
+    }
+
+    .mainLinks :hover {
+        border-left: 10px solid #414141;
+        background-color: #181818;
+    }
+
+    /* mainMenu when on top */
+    .mainMenu:not(.scrollD) {
+        background-color: rgba(100,100,100,0.4);
+    }
+
+    .menu.navActive:not(.scrollD) {
+        margin-top: 0;
+    }
+
+    /* Disable scroll and show burgermenu when modal is called */
+    .mainMenu.navActive, .burger.navActive {transform: translate(-100%); background-color: #1F1F1F;}
+    .menu.navActive {background-color: #1F1F1F;}
+
+    /* Burger 'lines' and their animation */
+    .burger div {
+        background-color: white;
+        transition: all 0.3s;
+        border-radius: 10%;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        margin-right: 50px;
+    }
+
+    /* So the lines have the right colour */
+    .burger.burger_white:not(.scrollD):not(.burgerdm):not(.toggle) div {
+        background-color: black;
+    }
+
+    .toggle .line1 {transform: rotate(-45deg) translate(-5px, 6px);}
+    .toggle .line3 {transform: rotate(45deg) translate(-5px, -6px);}
+    .toggle .line2 {opacity: 0;}
+    .burger {margin-right: -30px;cursor: pointer;}
+}
+
+/* BURGER ------------------------------------------ */
+
+/* DARKSLIDER -------------------------------------- */
+
+.nightModeSwitch {
+    margin-right: 20px;
+    margin-top: 6px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 29px;
+}
+
+.nightModeSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.nightModeSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 251, 251);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.nightModeSlider:before {
+    position: absolute;
+    content: "\1F31E";
+    height: 26px;
+    width: 26px;
+    left: 0;
+    top: -3.2px;
+    bottom: 4px;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.darkMode:checked + .nightModeSlider {
+    background-color: #494949;
+}
+
+.darkMode:checked + .nightModeSlider:before {
+    background-color: rgba(255,255,255, 0);
+    content: "\1F311";
+}
+
+.darkMode:focus + .nightModeSlider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.darkMode:checked + .nightModeSlider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.nightModeSlider.round {border-radius: 34px;}
+.nightModeSlider.round:before {border-radius: 50%;}
+
+/* DARKSLIDER -------------------------------------- */
